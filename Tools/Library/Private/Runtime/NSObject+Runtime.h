@@ -7,17 +7,21 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Config.h"
 
 typedef NS_ENUM(NSUInteger, NSObjectAssociationMode) {
     NSObjectAssociationModeAssign = 0,
+    NSObjectAssociationModeWeak = 0,
     NSObjectAssociationModeRetainNonatomic = 1,
+    NSObjectAssociationModeStrongNonatomic = 1,
     NSObjectAssociationModeCopyNonatomic = 3,
     NSObjectAssociationModeRetain = 01401,
+    NSObjectAssociationModeStrong = 01401,
     NSObjectAssociationModeCopy = 01403,
 };
 
 
-
+@class NSProperty;
 
 @interface NSObject (Runtime)
 
@@ -29,6 +33,6 @@ typedef NS_ENUM(NSUInteger, NSObjectAssociationMode) {
 
 - (id)associatedObjectForKey:(NSString *)key;
 
-+ (NSDictionary<NSString *, Class> *)propertyList;
++ (NSArray *)propertyList;
 
 @end

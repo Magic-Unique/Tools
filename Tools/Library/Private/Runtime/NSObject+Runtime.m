@@ -7,6 +7,7 @@
 //
 
 #import "NSObject+Runtime.h"
+#import "NSProperty.h"
 #import <objc/runtime.h>
 
 @implementation NSObject (Runtime)
@@ -29,15 +30,19 @@
     return objc_getAssociatedObject(self, key.UTF8String);
 }
 
-+ (NSDictionary<NSString *, Class> *)propertyList {
-    NSMutableDictionary<NSString *, Class> *list = [NSMutableDictionary new];
++ (NSArray *)propertyList {
+    NSMutableArray *propertyList = [NSMutableArray array];
     unsigned outCount;
     objc_property_t *properties = class_copyPropertyList(self, &outCount);
     for (int i = 0; i < outCount; i++) {
         const char *char_t = property_getAttributes(properties[i]);
-        NSLog(@"%s", char_t);
+        const char *char_n = property_getName(properties[i]);
+        NSProperty *property = [NSProperty propertyWithPropertyName:char_n andPropertyAttributes:char_t];
+        NSLog(@"%@", property.baseType ? @"yes" : @"no");
+        [propertyList addObject:property];
     }
-    return list;
+    return [propertyList copy];
 }
 
 @end
+
