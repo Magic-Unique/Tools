@@ -63,7 +63,7 @@ static unsigned char tab = 1;
     // 遍历数组的所有元素
     [self enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
         if ([obj isKindOfClass:[NSString class]]) {
-            [str appendFormat:@"\"%@\"", obj];
+            [str appendFormat:@"\"%@\",\n", obj];
         } else {
             tab++;
             [str appendFormat:@"%@%@,\n", [NSString stringWithTab:tab-1], obj];
