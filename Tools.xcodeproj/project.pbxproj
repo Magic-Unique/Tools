@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B3138E81BF1DBF20059A0DE /* MUToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B3138E51BF1DBF20059A0DE /* MUToast.m */; };
+		3B3138E91BF1DBF20059A0DE /* Toast.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3B3138E71BF1DBF20059A0DE /* Toast.bundle */; };
 		D42749F41BEB042E0081B2DD /* NSObject+Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = D42749F01BEB042E0081B2DD /* NSObject+Runtime.m */; };
 		D42749F51BEB042E0081B2DD /* NSProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = D42749F21BEB042E0081B2DD /* NSProperty.m */; };
 		D479163D1BE3A616003B4C4C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D479163C1BE3A616003B4C4C /* main.m */; };
@@ -134,6 +136,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B3138E41BF1DBF20059A0DE /* MUToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUToast.h; sourceTree = "<group>"; };
+		3B3138E51BF1DBF20059A0DE /* MUToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUToast.m; sourceTree = "<group>"; };
+		3B3138E61BF1DBF20059A0DE /* MUToastConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUToastConstant.h; sourceTree = "<group>"; };
+		3B3138E71BF1DBF20059A0DE /* Toast.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Toast.bundle; sourceTree = "<group>"; };
 		D42749EE1BEB042E0081B2DD /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
 		D42749EF1BEB042E0081B2DD /* NSObject+Runtime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Runtime.h"; sourceTree = "<group>"; };
 		D42749F01BEB042E0081B2DD /* NSObject+Runtime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Runtime.m"; sourceTree = "<group>"; };
@@ -407,6 +413,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B3138E31BF1DBF20059A0DE /* MUToast */ = {
+			isa = PBXGroup;
+			children = (
+				3B3138E41BF1DBF20059A0DE /* MUToast.h */,
+				3B3138E51BF1DBF20059A0DE /* MUToast.m */,
+				3B3138E61BF1DBF20059A0DE /* MUToastConstant.h */,
+				3B3138E71BF1DBF20059A0DE /* Toast.bundle */,
+			);
+			path = MUToast;
+			sourceTree = "<group>";
+		};
 		D42749ED1BEB042E0081B2DD /* Runtime */ = {
 			isa = PBXGroup;
 			children = (
@@ -478,6 +495,7 @@
 				D47916541BE3A640003B4C4C /* Foundation */,
 				D479165D1BE3A640003B4C4C /* Model */,
 				D479166A1BE3A640003B4C4C /* MUAudioPlayer */,
+				3B3138E31BF1DBF20059A0DE /* MUToast */,
 				D479166D1BE3A640003B4C4C /* Project */,
 				D47916711BE3A640003B4C4C /* Socket */,
 				D47916921BE3A640003B4C4C /* UIKit */,
@@ -1161,6 +1179,7 @@
 				D47917A01BE3A641003B4C4C /* Info.plist in Resources */,
 				D47916481BE3A616003B4C4C /* Assets.xcassets in Resources */,
 				D479179F1BE3A641003B4C4C /* Info.plist in Resources */,
+				3B3138E91BF1DBF20059A0DE /* Toast.bundle in Resources */,
 				D47916461BE3A616003B4C4C /* Main.storyboard in Resources */,
 				D47917E91BE3A641003B4C4C /* 省份+市区.plist in Resources */,
 				D47917C71BE3A641003B4C4C /* MJRefresh.bundle in Resources */,
@@ -1260,6 +1279,7 @@
 				D479177F1BE3A641003B4C4C /* MUAudioPlayer.m in Sources */,
 				D47917D31BE3A641003B4C4C /* SDWebImageManager.m in Sources */,
 				D47917A31BE3A641003B4C4C /* MASConstraintMaker.m in Sources */,
+				3B3138E81BF1DBF20059A0DE /* MUToast.m in Sources */,
 				D479179D1BE3A641003B4C4C /* FICImageTableEntry.m in Sources */,
 				D47917D61BE3A641003B4C4C /* UIImage+GIF.m in Sources */,
 				D47917BE1BE3A641003B4C4C /* MJRefreshAutoGifFooter.m in Sources */,
