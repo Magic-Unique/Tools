@@ -133,6 +133,7 @@
 		D47917E71BE3A641003B4C4C /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = D47917711BE3A641003B4C4C /* UIWebView+AFNetworking.m */; };
 		D47917E81BE3A641003B4C4C /* 市区+县.plist in Resources */ = {isa = PBXBuildFile; fileRef = D47917741BE3A641003B4C4C /* 市区+县.plist */; };
 		D47917E91BE3A641003B4C4C /* 省份+市区.plist in Resources */ = {isa = PBXBuildFile; fileRef = D47917751BE3A641003B4C4C /* 省份+市区.plist */; };
+		D4A26C6E1BF8A1B300011494 /* NSData+Unique.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A26C6D1BF8A1B300011494 /* NSData+Unique.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -400,6 +401,8 @@
 		D47917711BE3A641003B4C4C /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
 		D47917741BE3A641003B4C4C /* 市区+县.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "市区+县.plist"; sourceTree = "<group>"; };
 		D47917751BE3A641003B4C4C /* 省份+市区.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "省份+市区.plist"; sourceTree = "<group>"; };
+		D4A26C6C1BF8A1B300011494 /* NSData+Unique.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Unique.h"; sourceTree = "<group>"; };
+		D4A26C6D1BF8A1B300011494 /* NSData+Unique.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Unique.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -506,6 +509,7 @@
 		D47916541BE3A640003B4C4C /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				D4A26C6B1BF8A18C00011494 /* NSData */,
 				D4B028B11BE8E71A004BD032 /* NSObject */,
 				D47916551BE3A640003B4C4C /* IPAddress */,
 				D47916581BE3A640003B4C4C /* NSLog */,
@@ -1108,6 +1112,15 @@
 			path = Plist;
 			sourceTree = "<group>";
 		};
+		D4A26C6B1BF8A18C00011494 /* NSData */ = {
+			isa = PBXGroup;
+			children = (
+				D4A26C6C1BF8A1B300011494 /* NSData+Unique.h */,
+				D4A26C6D1BF8A1B300011494 /* NSData+Unique.m */,
+			);
+			path = NSData;
+			sourceTree = "<group>";
+		};
 		D4B028B11BE8E71A004BD032 /* NSObject */ = {
 			isa = PBXGroup;
 			children = (
@@ -1212,6 +1225,7 @@
 				D47917DB1BE3A641003B4C4C /* UIView+WebCacheOperation.m in Sources */,
 				D47917C91BE3A641003B4C4C /* UIScrollView+MJExtension.m in Sources */,
 				D47917BB1BE3A641003B4C4C /* MJRefreshComponent.m in Sources */,
+				D4A26C6E1BF8A1B300011494 /* NSData+Unique.m in Sources */,
 				D47917A91BE3A641003B4C4C /* View+MASAdditions.m in Sources */,
 				D479179E1BE3A641003B4C4C /* FICUtilities.m in Sources */,
 				D47917D71BE3A641003B4C4C /* UIImage+MultiFormat.m in Sources */,

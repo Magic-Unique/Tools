@@ -30,6 +30,18 @@
 
 @interface NSString (Data)
 
-@property (nonatomic, copy, readonly) NSString *md5;
+@property (nonatomic, copy, readonly) NSString *MD5;
 
 @end
+
+
+
+
+@interface NSString (Standard)
+
+@property (nonatomic, assign, readonly, getter=isIDCard) BOOL IDCard;
+
+@property (nonatomic, assign, readonly, getter=isEmail) BOOL email;
+
+@end
+
