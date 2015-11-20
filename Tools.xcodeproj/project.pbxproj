@@ -17,7 +17,6 @@
 		D47916461BE3A616003B4C4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D47916441BE3A616003B4C4C /* Main.storyboard */; };
 		D47916481BE3A616003B4C4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D47916471BE3A616003B4C4C /* Assets.xcassets */; };
 		D479164B1BE3A616003B4C4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D47916491BE3A616003B4C4C /* LaunchScreen.storyboard */; };
-		D47917761BE3A641003B4C4C /* IPAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = D47916571BE3A640003B4C4C /* IPAddress.m */; };
 		D47917771BE3A641003B4C4C /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = D47916591BE3A640003B4C4C /* Foundation+Log.m */; };
 		D47917781BE3A641003B4C4C /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D479165C1BE3A640003B4C4C /* NSString+Extension.m */; };
 		D47917791BE3A641003B4C4C /* MUClassGuide.m in Sources */ = {isa = PBXBuildFile; fileRef = D479165F1BE3A640003B4C4C /* MUClassGuide.m */; };
@@ -134,6 +133,7 @@
 		D47917E81BE3A641003B4C4C /* 市区+县.plist in Resources */ = {isa = PBXBuildFile; fileRef = D47917741BE3A641003B4C4C /* 市区+县.plist */; };
 		D47917E91BE3A641003B4C4C /* 省份+市区.plist in Resources */ = {isa = PBXBuildFile; fileRef = D47917751BE3A641003B4C4C /* 省份+市区.plist */; };
 		D4A26C6E1BF8A1B300011494 /* NSData+Unique.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A26C6D1BF8A1B300011494 /* NSData+Unique.m */; };
+		D4EA4BFA1BFF4B7B00B68851 /* IPAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = D4EA4BF91BFF4B7B00B68851 /* IPAddress.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -157,8 +157,6 @@
 		D47916471BE3A616003B4C4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D479164A1BE3A616003B4C4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D479164C1BE3A616003B4C4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D47916561BE3A640003B4C4C /* IPAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPAddress.h; sourceTree = "<group>"; };
-		D47916571BE3A640003B4C4C /* IPAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPAddress.m; sourceTree = "<group>"; };
 		D47916591BE3A640003B4C4C /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
 		D479165B1BE3A640003B4C4C /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
 		D479165C1BE3A640003B4C4C /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
@@ -403,6 +401,8 @@
 		D47917751BE3A641003B4C4C /* 省份+市区.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "省份+市区.plist"; sourceTree = "<group>"; };
 		D4A26C6C1BF8A1B300011494 /* NSData+Unique.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Unique.h"; sourceTree = "<group>"; };
 		D4A26C6D1BF8A1B300011494 /* NSData+Unique.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Unique.m"; sourceTree = "<group>"; };
+		D4EA4BF81BFF4B7B00B68851 /* IPAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPAddress.h; sourceTree = "<group>"; };
+		D4EA4BF91BFF4B7B00B68851 /* IPAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPAddress.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -496,6 +496,7 @@
 			children = (
 				3B3138EA1BF1DCAA0059A0DE /* Runtime */,
 				D47916541BE3A640003B4C4C /* Foundation */,
+				D4EA4BF71BFF4B7B00B68851 /* IPAddress */,
 				D479165D1BE3A640003B4C4C /* Model */,
 				D479166A1BE3A640003B4C4C /* MUAudioPlayer */,
 				3B3138E31BF1DBF20059A0DE /* MUToast */,
@@ -511,20 +512,10 @@
 			children = (
 				D4A26C6B1BF8A18C00011494 /* NSData */,
 				D4B028B11BE8E71A004BD032 /* NSObject */,
-				D47916551BE3A640003B4C4C /* IPAddress */,
 				D47916581BE3A640003B4C4C /* NSLog */,
 				D479165A1BE3A640003B4C4C /* NSString */,
 			);
 			path = Foundation;
-			sourceTree = "<group>";
-		};
-		D47916551BE3A640003B4C4C /* IPAddress */ = {
-			isa = PBXGroup;
-			children = (
-				D47916561BE3A640003B4C4C /* IPAddress.h */,
-				D47916571BE3A640003B4C4C /* IPAddress.m */,
-			);
-			path = IPAddress;
 			sourceTree = "<group>";
 		};
 		D47916581BE3A640003B4C4C /* NSLog */ = {
@@ -1128,6 +1119,15 @@
 			path = NSObject;
 			sourceTree = "<group>";
 		};
+		D4EA4BF71BFF4B7B00B68851 /* IPAddress */ = {
+			isa = PBXGroup;
+			children = (
+				D4EA4BF81BFF4B7B00B68851 /* IPAddress.h */,
+				D4EA4BF91BFF4B7B00B68851 /* IPAddress.m */,
+			);
+			path = IPAddress;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1213,6 +1213,7 @@
 				D47917991BE3A641003B4C4C /* FICImageCache.m in Sources */,
 				D47917801BE3A641003B4C4C /* WelcomeViewController.m in Sources */,
 				D47917911BE3A641003B4C4C /* AFHTTPRequestOperationManager.m in Sources */,
+				D4EA4BFA1BFF4B7B00B68851 /* IPAddress.m in Sources */,
 				D47917DE1BE3A641003B4C4C /* SVProgressHUD.m in Sources */,
 				D47917E11BE3A641003B4C4C /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				D479178B1BE3A641003B4C4C /* UIButton+Extension.m in Sources */,
@@ -1288,7 +1289,6 @@
 				D47917AD1BE3A641003B4C4C /* MBProgressHUD.m in Sources */,
 				D47917D11BE3A641003B4C4C /* SDWebImageDownloader.m in Sources */,
 				D47917931BE3A641003B4C4C /* AFNetworkReachabilityManager.m in Sources */,
-				D47917761BE3A641003B4C4C /* IPAddress.m in Sources */,
 				D47917D21BE3A641003B4C4C /* SDWebImageDownloaderOperation.m in Sources */,
 				D479177F1BE3A641003B4C4C /* MUAudioPlayer.m in Sources */,
 				D47917D31BE3A641003B4C4C /* SDWebImageManager.m in Sources */,
