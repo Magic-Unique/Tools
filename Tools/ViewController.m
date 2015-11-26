@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import "NSString+Extension.h"
 
+#import "MUToast.h"
+
 @interface ViewController ()
 
 @end
@@ -17,7 +19,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSLog(@"%@", @"吴双".md5);
+    self.view.backgroundColor = [UIColor blueColor];
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [super touchesBegan:touches withEvent:event];
+    
+    MUToast *toast = [MUToast toastWithText:@"这是一条消息" style:MUToastStyleBlurDark];
+    [toast showForDuration:2];
 }
 
 @end
