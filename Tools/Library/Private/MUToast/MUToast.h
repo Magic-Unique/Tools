@@ -10,12 +10,11 @@
 
 
 typedef NS_ENUM(NSUInteger, MUToastStyle) {
-    MUToastStyleBlurDark,
+    MUToastStyleBlurDark,   //default
     MUToastStyleBlurLight,
     MUToastStyleBlack,
     MUToastStyleWhite,
     MUToastStyleShine,
-    MUToastStyleDefault = MUToastStyleBlurDark,
 };
 
 @interface MUToast : UIView

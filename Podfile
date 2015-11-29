@@ -3,6 +3,8 @@
 # Uncomment this line if you're using Swift
 # use_frameworks!
 
+inhibit_all_warnings!
+
 target 'Tools' do
 
 pod 'AFNetworking'

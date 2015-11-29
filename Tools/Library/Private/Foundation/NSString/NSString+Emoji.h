@@ -1,9 +1,9 @@
 //
 //  NSString+Emoji.h
-//  黑马微博
+//  Tools
 //
-//  Created by MJ Lee on 14/7/12.
-//  Copyright (c) 2014年 heima. All rights reserved.
+//  Created by Magic_Unique on 14/7/12.
+//  Copyright (c) 2015年 Unique. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

@@ -2,7 +2,7 @@
 //  NSString+Hash.m
 //
 //  Created by Tom Corwine on 5/30/12.
-////MD5解密网站：http://www.cmd5.com
+//
 
 
 #import "NSString+hash.h"
@@ -77,7 +77,7 @@
 
 #pragma mark - Helpers
 
-- (NSString *)stringFromBytes:(unsigned char *)bytes length:(int)length
+- (NSString *)stringFromBytes:(unsigned char *)bytes length:(NSUInteger)length
 {
 	NSMutableString *mutableString = @"".mutableCopy;
 	for (int i = 0; i < length; i++)

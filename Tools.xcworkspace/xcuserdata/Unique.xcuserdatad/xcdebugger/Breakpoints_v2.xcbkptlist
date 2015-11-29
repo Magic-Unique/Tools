@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            scope = "0"
+            stopOnStyle = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tools/Library/Private/MUBottomPopView/MUBottomPopView.m"
+            timestampString = "470477092.807732"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "208"
+            endingLineNumber = "208"
+            landmarkName = "-hideWithAnimatedOption:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tools/Library/Private/MUBottomPopView/MUBottomPopView.m"
+            timestampString = "470477107.242465"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "223"
+            endingLineNumber = "223"
+            landmarkName = "-hideWithAnimatedOption:"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MUBottomPopView hideWithAnimatedOption:]"
+                  moduleName = "Tools"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Unique/Documents/Github/Tools/Tools/Library/Private/MUBottomPopView/MUBottomPopView.m"
+                  timestampString = "470477657.700764"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "223"
+                  endingLineNumber = "223"
+                  offsetFromSymbolStart = "829">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__42-[MUBottomPopView hideWithAnimatedOption:]_block_invoke99"
+                  moduleName = "Tools"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Unique/Documents/Github/Tools/Tools/Library/Private/MUBottomPopView/MUBottomPopView.m"
+                  timestampString = "470477657.701381"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "223"
+                  endingLineNumber = "223"
+                  offsetFromSymbolStart = "15">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tools/Library/Private/MUBottomPopView/MUBottomPopView.m"
+            timestampString = "470477213.256063"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "224"
+            endingLineNumber = "224"
+            landmarkName = "-hideWithAnimatedOption:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tools/Library/Private/MUBottomPopView/MUBottomPopView.m"
+            timestampString = "470477214.697861"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "227"
+            endingLineNumber = "227"
+            landmarkName = "-hideWithAnimatedOption:"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__42-[MUBottomPopView hideWithAnimatedOption:]_block_invoke103"
+                  moduleName = "Tools"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Unique/Documents/Github/Tools/Tools/Library/Private/MUBottomPopView/MUBottomPopView.m"
+                  timestampString = "470477657.705863"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "227"
+                  endingLineNumber = "227"
+                  offsetFromSymbolStart = "63">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__42-[MUBottomPopView hideWithAnimatedOption:]_block_invoke_2"
+                  moduleName = "Tools"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Unique/Documents/Github/Tools/Tools/Library/Private/MUBottomPopView/MUBottomPopView.m"
+                  timestampString = "470477657.706092"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "227"
+                  endingLineNumber = "227"
+                  offsetFromSymbolStart = "18">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tools/Library/Private/MUBottomPopView/MUBottomPopView.m"
+            timestampString = "470477216.046002"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "230"
+            endingLineNumber = "230"
+            landmarkName = "-hideWithAnimatedOption:"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__42-[MUBottomPopView hideWithAnimatedOption:]_block_invoke103"
+                  moduleName = "Tools"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Unique/Documents/Github/Tools/Tools/Library/Private/MUBottomPopView/MUBottomPopView.m"
+                  timestampString = "470477657.707317"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "230"
+                  endingLineNumber = "230"
+                  offsetFromSymbolStart = "135">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__42-[MUBottomPopView hideWithAnimatedOption:]_block_invoke_2"
+                  moduleName = "Tools"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Unique/Documents/Github/Tools/Tools/Library/Private/MUBottomPopView/MUBottomPopView.m"
+                  timestampString = "470477657.707721"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "230"
+                  endingLineNumber = "230"
+                  offsetFromSymbolStart = "271">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__copy_helper_block_104"
+                  moduleName = "Tools"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Unique/Documents/Github/Tools/Tools/Library/Private/MUBottomPopView/MUBottomPopView.m"
+                  timestampString = "470477657.708354"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__destroy_helper_block_105"
+                  moduleName = "Tools"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Unique/Documents/Github/Tools/Tools/Library/Private/MUBottomPopView/MUBottomPopView.m"
+                  timestampString = "470477657.708789"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

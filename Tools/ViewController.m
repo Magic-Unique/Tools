@@ -7,9 +7,9 @@
 //
 
 #import "ViewController.h"
-#import "NSString+Extension.h"
 
-#import "MUToast.h"
+#import "MUBottomPopCityPickerView.h"
+#import "MUBottomPopDatePickerView.h"
 
 @interface ViewController ()
 
@@ -24,9 +24,17 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     [super touchesBegan:touches withEvent:event];
-    
-    MUToast *toast = [MUToast toastWithText:@"这是一条消息" style:MUToastStyleBlurDark];
-    [toast showForDuration:2];
+    static NSDictionary *_cityInfo = nil;
+    MUBottomPopCityPickerView *view = [[MUBottomPopCityPickerView alloc] initWithResultBlock:^(BOOL ok, NSDictionary *cityInfo) {
+        NSLog(@"%@", cityInfo);
+        _cityInfo = cityInfo;
+    }];
+    view.style = 3;
+    view.cityInfo = _cityInfo;
+    [view showWithAnimatedOption:MUBottomPopViewAnimatedOptionRebound];
+//    [MUBottomPopDatePickerView showWithAnimatedOption:MUBottomPopViewAnimatedOptionRebound certainBlock:^(BOOL ok, NSDate *date) {
+//        NSLog(@"%@", date);
+//    }];
 }
 
 @end

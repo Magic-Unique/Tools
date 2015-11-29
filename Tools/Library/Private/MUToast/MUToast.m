@@ -99,7 +99,7 @@
 }
 
 - (instancetype)initWithText:(NSString *)text {
-    self = [self initWithStyle:MUToastStyleDefault];
+    self = [self initWithStyle:MUToastStyleBlurDark];
     if (self) {
         self.text = text;
     }
