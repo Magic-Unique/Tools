@@ -119,6 +119,7 @@ typedef void(^AnimatedCompleted)(BOOL finished);
     center = self.contentView.center;
     center.x = self.pannelView.bounds.size.width / 2;
     self.contentView.center = center;
+    [self.contentView setNeedsLayout];
 }
 
 - (void)setContentView:(UIView *)contentView {

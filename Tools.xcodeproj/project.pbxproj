@@ -12,6 +12,8 @@
 		3B3138F11BF1DCAA0059A0DE /* NSObject+Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B3138ED1BF1DCAA0059A0DE /* NSObject+Runtime.m */; };
 		3B3138F21BF1DCAA0059A0DE /* NSProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B3138EF1BF1DCAA0059A0DE /* NSProperty.m */; };
 		A79953114289E6202751FC07 /* libPods-Tools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B29DA2A35C97111F3D92B181 /* libPods-Tools.a */; };
+		D41534AF1C0D81000086FA21 /* MUBottomPopPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = D41534AE1C0D81000086FA21 /* MUBottomPopPickerView.m */; };
+		D41534B11C0D8C360086FA21 /* UINavigationBar.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D41534B01C0D8C360086FA21 /* UINavigationBar.bundle */; };
 		D479163D1BE3A616003B4C4C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D479163C1BE3A616003B4C4C /* main.m */; };
 		D47916401BE3A616003B4C4C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D479163F1BE3A616003B4C4C /* AppDelegate.m */; };
 		D47916431BE3A616003B4C4C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D47916421BE3A616003B4C4C /* ViewController.m */; };
@@ -72,6 +74,9 @@
 		3B3138F01BF1DCAA0059A0DE /* Runtime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Runtime.h; sourceTree = "<group>"; };
 		8DA532B1EC075493BFD4F0C2 /* Pods-Tools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tools.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tools/Pods-Tools.release.xcconfig"; sourceTree = "<group>"; };
 		B29DA2A35C97111F3D92B181 /* libPods-Tools.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tools.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D41534AD1C0D81000086FA21 /* MUBottomPopPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUBottomPopPickerView.h; sourceTree = "<group>"; };
+		D41534AE1C0D81000086FA21 /* MUBottomPopPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUBottomPopPickerView.m; sourceTree = "<group>"; };
+		D41534B01C0D8C360086FA21 /* UINavigationBar.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = UINavigationBar.bundle; sourceTree = "<group>"; };
 		D47916381BE3A616003B4C4C /* Tools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D479163C1BE3A616003B4C4C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D479163E1BE3A616003B4C4C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -525,6 +530,7 @@
 		D47916A01BE3A640003B4C4C /* UINavigationBar */ = {
 			isa = PBXGroup;
 			children = (
+				D41534B01C0D8C360086FA21 /* UINavigationBar.bundle */,
 				D47916A11BE3A640003B4C4C /* UINavigationBar+Extension.h */,
 				D47916A21BE3A640003B4C4C /* UINavigationBar+Extension.m */,
 			);
@@ -583,6 +589,8 @@
 				D4B47C6A1C0ACF08007B8575 /* MUBottomPopCityPickerView.m */,
 				D4B47C6B1C0ACF08007B8575 /* MUBottomPopDatePickerView.h */,
 				D4B47C6C1C0ACF08007B8575 /* MUBottomPopDatePickerView.m */,
+				D41534AD1C0D81000086FA21 /* MUBottomPopPickerView.h */,
+				D41534AE1C0D81000086FA21 /* MUBottomPopPickerView.m */,
 				D4B47C6D1C0ACF08007B8575 /* MUBottomPopView.h */,
 				D4B47C6E1C0ACF08007B8575 /* MUBottomPopView.m */,
 			);
@@ -674,6 +682,7 @@
 				D4B47C661C0ACEF8007B8575 /* China.plist in Resources */,
 				D4BAA40A1C09990B00CFEC71 /* 省+市+县.plist in Resources */,
 				D47916461BE3A616003B4C4C /* Main.storyboard in Resources */,
+				D41534B11C0D8C360086FA21 /* UINavigationBar.bundle in Resources */,
 				D4B47C741C0AD61A007B8575 /* pcr.plist in Resources */,
 				D47917E91BE3A641003B4C4C /* 省份+市区.plist in Resources */,
 			);
@@ -743,6 +752,7 @@
 				D479178C1BE3A641003B4C4C /* UIColor+Extension.m in Sources */,
 				D47917871BE3A641003B4C4C /* TCPSyncServer.m in Sources */,
 				D47916431BE3A616003B4C4C /* ViewController.m in Sources */,
+				D41534AF1C0D81000086FA21 /* MUBottomPopPickerView.m in Sources */,
 				D4A26C6E1BF8A1B300011494 /* NSData+Unique.m in Sources */,
 				D47917891BE3A641003B4C4C /* UDPSyncSocket.m in Sources */,
 				D479177D1BE3A641003B4C4C /* NSObject+Model.m in Sources */,

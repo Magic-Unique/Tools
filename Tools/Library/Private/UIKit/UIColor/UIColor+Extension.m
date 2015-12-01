@@ -93,4 +93,37 @@
     return MUColorWithHSB(h, 255, 255);
 }
 
++ (instancetype)colorWithSourceColor:(UIColor *)sourceColor
+                         targetColor:(UIColor *)targetColor
+                           stepCount:(NSUInteger)stepCount
+                           stepIndex:(NSUInteger)stepIndex {
+    
+    
+    
+    if (stepIndex == 0) {
+        return sourceColor;
+    } else if (stepIndex == stepCount) {
+        return targetColor;
+    } else {
+        CGFloat sourceRed = sourceColor.redValue;
+        CGFloat sourceGreen = sourceColor.greenValue;
+        CGFloat sourceBlue = sourceColor.blueValue;
+        CGFloat sourceAlpha = sourceColor.alphaValue;
+        
+        CGFloat targetRed = targetColor.redValue;
+        CGFloat targetGreen = targetColor.greenValue;
+        CGFloat targetBlue = targetColor.blueValue;
+        CGFloat targetAlpha = targetColor.alphaValue;
+        
+        CGFloat currentRed      = (targetRed - sourceRed)       / stepCount * stepIndex + sourceRed;
+        CGFloat currentGreen    = (targetGreen - sourceGreen)   / stepCount * stepIndex + sourceGreen;
+        CGFloat currentBlue     = (targetBlue - sourceBlue)     / stepCount * stepIndex + sourceBlue;
+        CGFloat currentAlpha    = (targetAlpha - sourceAlpha)   / stepCount * stepIndex + sourceAlpha;
+        
+        
+        return [UIColor colorWithRed:currentRed green:currentGreen blue:currentBlue alpha:currentAlpha];
+    }
+    
+}
+
 @end

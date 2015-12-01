@@ -10,8 +10,16 @@
 
 #import "MUBottomPopCityPickerView.h"
 #import "MUBottomPopDatePickerView.h"
+#import "MUBottomPopPickerView.h"
+
+#import "UINavigationBar+Extension.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UISlider *r;
+@property (weak, nonatomic) IBOutlet UISlider *g;
+@property (weak, nonatomic) IBOutlet UISlider *b;
+@property (weak, nonatomic) IBOutlet UISlider *a;
+@property (weak, nonatomic) IBOutlet UISwitch *s;
 
 @end
 
@@ -20,21 +28,42 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor blueColor];
+    self.title = @"title";
+    
+    self.navigationController.navigationBar.alphaBackgroundColor = [UIColor colorWithRed:1 green:0 blue:0 alpha:0.5];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     [super touchesBegan:touches withEvent:event];
-    static NSDictionary *_cityInfo = nil;
-    MUBottomPopCityPickerView *view = [[MUBottomPopCityPickerView alloc] initWithResultBlock:^(BOOL ok, NSDictionary *cityInfo) {
-        NSLog(@"%@", cityInfo);
-        _cityInfo = cityInfo;
-    }];
-    view.style = 3;
-    view.cityInfo = _cityInfo;
-    [view showWithAnimatedOption:MUBottomPopViewAnimatedOptionRebound];
-//    [MUBottomPopDatePickerView showWithAnimatedOption:MUBottomPopViewAnimatedOptionRebound certainBlock:^(BOOL ok, NSDate *date) {
-//        NSLog(@"%@", date);
-//    }];
+}
+- (IBAction)valueChange:(UISlider *)sender {
+//    [self.navigationController.navigationBar setAlphaBackgroundColor:[UIColor colorWithRed:1 green:0 blue:0 alpha:sender.value]];
+}
+- (IBAction)clickButton:(UIButton *)sender {
+    
+    [self.navigationController.navigationBar setAlphaBackgroundColor:[UIColor colorWithRed:self.r.value green:self.g.value blue:self.b.value alpha:self.a.value] animated:YES];
+    
+}
+- (IBAction)rc:(id)sender {
+    if (self.s.on) {
+        [self.navigationController.navigationBar setAlphaBackgroundColor:[UIColor colorWithRed:self.r.value green:self.g.value blue:self.b.value alpha:self.a.value] animated:NO];
+    }
+    
+}
+- (IBAction)gc:(id)sender {
+    if (self.s.on) {
+        [self.navigationController.navigationBar setAlphaBackgroundColor:[UIColor colorWithRed:self.r.value green:self.g.value blue:self.b.value alpha:self.a.value] animated:NO];
+    }
+}
+- (IBAction)bc:(id)sender {
+    if (self.s.on) {
+        [self.navigationController.navigationBar setAlphaBackgroundColor:[UIColor colorWithRed:self.r.value green:self.g.value blue:self.b.value alpha:self.a.value] animated:NO];
+    }
+}
+- (IBAction)ac:(id)sender {
+    if (self.s.on) {
+        [self.navigationController.navigationBar setAlphaBackgroundColor:[UIColor colorWithRed:self.r.value green:self.g.value blue:self.b.value alpha:self.a.value] animated:NO];
+    }
 }
 
 @end

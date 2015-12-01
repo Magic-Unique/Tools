@@ -111,7 +111,6 @@ NSString *const MUCityInfoRegionKey = @"region";
     CGRect frame = self.contentView.frame;
     frame.size.width = [UIApplication sharedApplication].windows.lastObject.bounds.size.width;
     self.contentView.frame = frame;
-    [self.contentView setNeedsLayout];
     [super layoutSubviews];
 }
 
