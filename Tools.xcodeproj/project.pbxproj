@@ -58,6 +58,7 @@
 		D4B47C721C0ACF08007B8575 /* MUBottomPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B47C6E1C0ACF08007B8575 /* MUBottomPopView.m */; };
 		D4B47C741C0AD61A007B8575 /* pcr.plist in Resources */ = {isa = PBXBuildFile; fileRef = D4B47C731C0AD61A007B8575 /* pcr.plist */; };
 		D4BAA40A1C09990B00CFEC71 /* 省+市+县.plist in Resources */ = {isa = PBXBuildFile; fileRef = D4BAA4091C09990B00CFEC71 /* 省+市+县.plist */; };
+		D4C19AA71C0F21EC004B75C0 /* MUCirculateRollView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C19AA51C0F21EC004B75C0 /* MUCirculateRollView.m */; };
 		D4EA4BFA1BFF4B7B00B68851 /* IPAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = D4EA4BF91BFF4B7B00B68851 /* IPAddress.m */; };
 /* End PBXBuildFile section */
 
@@ -161,6 +162,8 @@
 		D4B47C6E1C0ACF08007B8575 /* MUBottomPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUBottomPopView.m; sourceTree = "<group>"; };
 		D4B47C731C0AD61A007B8575 /* pcr.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = pcr.plist; sourceTree = "<group>"; };
 		D4BAA4091C09990B00CFEC71 /* 省+市+县.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "省+市+县.plist"; sourceTree = "<group>"; };
+		D4C19AA41C0F21EC004B75C0 /* MUCirculateRollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUCirculateRollView.h; sourceTree = "<group>"; };
+		D4C19AA51C0F21EC004B75C0 /* MUCirculateRollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUCirculateRollView.m; sourceTree = "<group>"; };
 		D4EA4BF81BFF4B7B00B68851 /* IPAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPAddress.h; sourceTree = "<group>"; };
 		D4EA4BF91BFF4B7B00B68851 /* IPAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPAddress.m; sourceTree = "<group>"; };
 		FB3DDECC61883873CDC5D70E /* Pods-Tools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tools.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tools/Pods-Tools.debug.xcconfig"; sourceTree = "<group>"; };
@@ -272,6 +275,7 @@
 				D479165D1BE3A640003B4C4C /* Model */,
 				D479166A1BE3A640003B4C4C /* MUAudioPlayer */,
 				D4B47C671C0ACF08007B8575 /* MUBottomPopView */,
+				D4C19AA11C0F21EC004B75C0 /* MUCirculateRoll */,
 				3B3138E31BF1DBF20059A0DE /* MUToast */,
 				D479166D1BE3A640003B4C4C /* Project */,
 				D47916711BE3A640003B4C4C /* Socket */,
@@ -597,6 +601,15 @@
 			path = MUBottomPopView;
 			sourceTree = "<group>";
 		};
+		D4C19AA11C0F21EC004B75C0 /* MUCirculateRoll */ = {
+			isa = PBXGroup;
+			children = (
+				D4C19AA41C0F21EC004B75C0 /* MUCirculateRollView.h */,
+				D4C19AA51C0F21EC004B75C0 /* MUCirculateRollView.m */,
+			);
+			path = MUCirculateRoll;
+			sourceTree = "<group>";
+		};
 		D4EA4BF71BFF4B7B00B68851 /* IPAddress */ = {
 			isa = PBXGroup;
 			children = (
@@ -753,6 +766,7 @@
 				D47917871BE3A641003B4C4C /* TCPSyncServer.m in Sources */,
 				D47916431BE3A616003B4C4C /* ViewController.m in Sources */,
 				D41534AF1C0D81000086FA21 /* MUBottomPopPickerView.m in Sources */,
+				D4C19AA71C0F21EC004B75C0 /* MUCirculateRollView.m in Sources */,
 				D4A26C6E1BF8A1B300011494 /* NSData+Unique.m in Sources */,
 				D47917891BE3A641003B4C4C /* UDPSyncSocket.m in Sources */,
 				D479177D1BE3A641003B4C4C /* NSObject+Model.m in Sources */,
