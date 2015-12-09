@@ -242,7 +242,7 @@ NSString *const MUCityInfoRegionKey = @"region";
     }
     if (self.style >= 2) {
         // use regions replace city, if hide regions and province is municipality.
-        if ([self.selectedProvince.province hasSuffix:municipality_suffix]) {
+        if ([self.selectedProvince.province hasSuffix:municipality_suffix] && self.style == 2) {
             cityInfo[MUCityInfoRegionKey] = self.selectedRegion;
         } else {
             cityInfo[MUCityInfoCityKey] = self.selectedCity.city;
