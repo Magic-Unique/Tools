@@ -10,12 +10,39 @@
 
 @interface IPAddress : NSObject
 
-+ (NSArray *)localIPAddress;
+/**
+ *  获取所有IP地址
+ *
+ *  @return NSArray<NSString *>
+ */
++ (NSArray<NSString *> *)localIPAddress;
 
-+ (NSArray *)localWiFiIPAddress;
-+ (NSArray *)localGPRSIPAddress;
+/**
+ *  获取WiFi地址
+ *
+ *  @return NSArray<NSString *>
+ */
++ (NSArray<NSString *> *)localWiFiIPAddress;
 
-+ (NSArray *)localLANIPAddress;
-+ (NSArray *)localWANIPAddress;
+/**
+ *  获取移动数据地址
+ *
+ *  @return NSArray<NSString *>
+ */
++ (NSArray<NSString *> *)localGPRSIPAddress;
+
+/**
+ *  获取广域网地址
+ *
+ *  @return NSArray<NSString *>
+ */
++ (NSArray<NSString *> *)localLANIPAddress;
+
+/**
+ *  获取局域网地址
+ *
+ *  @return NSArray<NSString *>
+ */
++ (NSArray<NSString *> *)localWANIPAddress;
 
 @end
