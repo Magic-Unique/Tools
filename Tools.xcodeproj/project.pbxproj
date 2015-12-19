@@ -59,6 +59,8 @@
 		D4B47C721C0ACF08007B8575 /* MUBottomPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B47C6E1C0ACF08007B8575 /* MUBottomPopView.m */; };
 		D4B47C741C0AD61A007B8575 /* pcr.plist in Resources */ = {isa = PBXBuildFile; fileRef = D4B47C731C0AD61A007B8575 /* pcr.plist */; };
 		D4BAA40A1C09990B00CFEC71 /* 省+市+县.plist in Resources */ = {isa = PBXBuildFile; fileRef = D4BAA4091C09990B00CFEC71 /* 省+市+县.plist */; };
+		D4C0C43F1C202FA000839875 /* NSDateFormatter+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C0C43E1C202FA000839875 /* NSDateFormatter+Category.m */; };
+		D4C0C4441C20307C00839875 /* DateDescription.strings in Resources */ = {isa = PBXBuildFile; fileRef = D4C0C4461C20307C00839875 /* DateDescription.strings */; };
 		D4C19AA71C0F21EC004B75C0 /* MUCirculateRollView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C19AA51C0F21EC004B75C0 /* MUCirculateRollView.m */; };
 		D4EA4BFA1BFF4B7B00B68851 /* IPAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = D4EA4BF91BFF4B7B00B68851 /* IPAddress.m */; };
 /* End PBXBuildFile section */
@@ -165,6 +167,12 @@
 		D4B47C6E1C0ACF08007B8575 /* MUBottomPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUBottomPopView.m; sourceTree = "<group>"; };
 		D4B47C731C0AD61A007B8575 /* pcr.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = pcr.plist; sourceTree = "<group>"; };
 		D4BAA4091C09990B00CFEC71 /* 省+市+县.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "省+市+县.plist"; sourceTree = "<group>"; };
+		D4C0C43D1C202FA000839875 /* NSDateFormatter+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+Category.h"; sourceTree = "<group>"; };
+		D4C0C43E1C202FA000839875 /* NSDateFormatter+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+Category.m"; sourceTree = "<group>"; };
+		D4C0C4401C20304900839875 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		D4C0C4411C20304900839875 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		D4C0C4451C20307C00839875 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/DateDescription.strings"; sourceTree = "<group>"; };
+		D4C0C4471C20307E00839875 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/DateDescription.strings; sourceTree = "<group>"; };
 		D4C19AA41C0F21EC004B75C0 /* MUCirculateRollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUCirculateRollView.h; sourceTree = "<group>"; };
 		D4C19AA51C0F21EC004B75C0 /* MUCirculateRollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUCirculateRollView.m; sourceTree = "<group>"; };
 		D4EA4BF81BFF4B7B00B68851 /* IPAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPAddress.h; sourceTree = "<group>"; };
@@ -578,6 +586,9 @@
 			children = (
 				D47B40681C11901400707258 /* NSDate+Extension.h */,
 				D47B40691C11901400707258 /* NSDate+Extension.m */,
+				D4C0C43D1C202FA000839875 /* NSDateFormatter+Category.h */,
+				D4C0C43E1C202FA000839875 /* NSDateFormatter+Category.m */,
+				D4C0C4461C20307C00839875 /* DateDescription.strings */,
 			);
 			path = NSDate;
 			sourceTree = "<group>";
@@ -705,6 +716,7 @@
 				D479164B1BE3A616003B4C4C /* LaunchScreen.storyboard in Resources */,
 				D47916481BE3A616003B4C4C /* Assets.xcassets in Resources */,
 				3B3138E91BF1DBF20059A0DE /* Toast.bundle in Resources */,
+				D4C0C4441C20307C00839875 /* DateDescription.strings in Resources */,
 				D4B47C661C0ACEF8007B8575 /* China.plist in Resources */,
 				D4BAA40A1C09990B00CFEC71 /* 省+市+县.plist in Resources */,
 				D47916461BE3A616003B4C4C /* Main.storyboard in Resources */,
@@ -799,6 +811,7 @@
 				D47917811BE3A641003B4C4C /* NSSocket.m in Sources */,
 				D4B47C721C0ACF08007B8575 /* MUBottomPopView.m in Sources */,
 				D479178A1BE3A641003B4C4C /* UIBarButtonItem+Extension.m in Sources */,
+				D4C0C43F1C202FA000839875 /* NSDateFormatter+Category.m in Sources */,
 				D47917861BE3A641003B4C4C /* TCPSyncClient.m in Sources */,
 				D479177F1BE3A641003B4C4C /* MUAudioPlayer.m in Sources */,
 				3B3138E81BF1DBF20059A0DE /* MUToast.m in Sources */,
@@ -821,6 +834,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				D47916451BE3A616003B4C4C /* Base */,
+				D4C0C4401C20304900839875 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -829,8 +843,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				D479164A1BE3A616003B4C4C /* Base */,
+				D4C0C4411C20304900839875 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D4C0C4461C20307C00839875 /* DateDescription.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D4C0C4451C20307C00839875 /* zh-Hans */,
+				D4C0C4471C20307E00839875 /* en */,
+			);
+			name = DateDescription.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
