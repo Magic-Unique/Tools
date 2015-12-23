@@ -53,7 +53,15 @@
  *  @return 欢迎界面是否应该被显示
  */
 + (BOOL)canBeShow {
-    return NO;
+	NSString *keyForLastVersion = @"com.unique.lastversoin";
+	NSString *lastVersionString = [[NSUserDefaults standardUserDefaults] objectForKey:keyForLastVersion];
+	NSString *currentVersionString = [[NSBundle mainBundle] infoDictionary][@"CFBundleShortVersionString"];
+	if (lastVersionString.floatValue < currentVersionString.floatValue) {
+		[[NSUserDefaults standardUserDefaults] setObject:currentVersionString forKey:keyForLastVersion];
+		return YES;
+	} else {
+		return NO;
+	}
 }
 
 /**
