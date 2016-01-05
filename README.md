@@ -81,6 +81,9 @@ MUBottomPopPickerView     | 标题选择器, 传入标题数组自动封装 Pick
 ## Library/Private/MUCirculateRoll
 循环滚动条
 
+## Library/Private/MUFirstTime
+第一次运行
+
 ## Library/Private/MUGuideView
 新手指南视图
 

@@ -64,6 +64,7 @@
 		D4B290C41C3BF6EF003AFE40 /* MUGuideArrowView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B290B61C3BF6EF003AFE40 /* MUGuideArrowView.m */; };
 		D4B290C51C3BF6EF003AFE40 /* MUGuideContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B290B81C3BF6EF003AFE40 /* MUGuideContentView.m */; };
 		D4B290C61C3BF6EF003AFE40 /* MUGuideTargetView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B290BA1C3BF6EF003AFE40 /* MUGuideTargetView.m */; };
+		D4B290F11C3BFEA3003AFE40 /* MUFirstTime.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B290F01C3BFEA3003AFE40 /* MUFirstTime.m */; };
 		D4B47C661C0ACEF8007B8575 /* China.plist in Resources */ = {isa = PBXBuildFile; fileRef = D4B47C651C0ACEF8007B8575 /* China.plist */; };
 		D4B47C701C0ACF08007B8575 /* MUBottomPopCityPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B47C6A1C0ACF08007B8575 /* MUBottomPopCityPickerView.m */; };
 		D4B47C711C0ACF08007B8575 /* MUBottomPopDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B47C6C1C0ACF08007B8575 /* MUBottomPopDatePickerView.m */; };
@@ -189,6 +190,8 @@
 		D4B290B81C3BF6EF003AFE40 /* MUGuideContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUGuideContentView.m; sourceTree = "<group>"; };
 		D4B290B91C3BF6EF003AFE40 /* MUGuideTargetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUGuideTargetView.h; sourceTree = "<group>"; };
 		D4B290BA1C3BF6EF003AFE40 /* MUGuideTargetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUGuideTargetView.m; sourceTree = "<group>"; };
+		D4B290EF1C3BFEA3003AFE40 /* MUFirstTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUFirstTime.h; sourceTree = "<group>"; };
+		D4B290F01C3BFEA3003AFE40 /* MUFirstTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUFirstTime.m; sourceTree = "<group>"; };
 		D4B47C651C0ACEF8007B8575 /* China.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = China.plist; sourceTree = "<group>"; };
 		D4B47C691C0ACF08007B8575 /* MUBottomPopCityPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUBottomPopCityPickerView.h; sourceTree = "<group>"; };
 		D4B47C6A1C0ACF08007B8575 /* MUBottomPopCityPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUBottomPopCityPickerView.m; sourceTree = "<group>"; };
@@ -327,6 +330,7 @@
 				D479166A1BE3A640003B4C4C /* MUAudioPlayer */,
 				D4B47C671C0ACF08007B8575 /* MUBottomPopView */,
 				D4C19AA11C0F21EC004B75C0 /* MUCirculateRoll */,
+				D4B290EE1C3BFEA3003AFE40 /* MUFirstTime */,
 				D4B290A31C3BF6EF003AFE40 /* MUGuideView */,
 				D457BE081C2903D10097035A /* MUPageChooser */,
 				3B3138E31BF1DBF20059A0DE /* MUToast */,
@@ -700,6 +704,15 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		D4B290EE1C3BFEA3003AFE40 /* MUFirstTime */ = {
+			isa = PBXGroup;
+			children = (
+				D4B290EF1C3BFEA3003AFE40 /* MUFirstTime.h */,
+				D4B290F01C3BFEA3003AFE40 /* MUFirstTime.m */,
+			);
+			path = MUFirstTime;
+			sourceTree = "<group>";
+		};
 		D4B47C671C0ACF08007B8575 /* MUBottomPopView */ = {
 			isa = PBXGroup;
 			children = (
@@ -909,6 +922,7 @@
 				D47917811BE3A641003B4C4C /* NSSocket.m in Sources */,
 				D4B47C721C0ACF08007B8575 /* MUBottomPopView.m in Sources */,
 				D479178A1BE3A641003B4C4C /* UIBarButtonItem+Extension.m in Sources */,
+				D4B290F11C3BFEA3003AFE40 /* MUFirstTime.m in Sources */,
 				D4C0C43F1C202FA000839875 /* NSDateFormatter+Category.m in Sources */,
 				D47917861BE3A641003B4C4C /* TCPSyncClient.m in Sources */,
 				D479177F1BE3A641003B4C4C /* MUAudioPlayer.m in Sources */,
