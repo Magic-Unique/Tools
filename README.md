@@ -81,6 +81,9 @@ MUBottomPopPickerView     | 标题选择器, 传入标题数组自动封装 Pick
 ## Library/Private/MUCirculateRoll
 循环滚动条
 
+## Library/Private/MUGuideView
+新手指南视图
+
 ## Library/Private/MUToast
 仿照安卓 Toast 效果, 功能类似 MBProgressHUD
 
