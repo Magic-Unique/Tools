@@ -54,6 +54,8 @@
 		D48DBD901C06D5F300D7364E /* NSString+QRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = D48DBD8D1C06D5F300D7364E /* NSString+QRCode.m */; };
 		D48DBD931C06D5FE00D7364E /* NSString+Emoji.m in Sources */ = {isa = PBXBuildFile; fileRef = D48DBD921C06D5FE00D7364E /* NSString+Emoji.m */; };
 		D4A26C6E1BF8A1B300011494 /* NSData+Unique.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A26C6D1BF8A1B300011494 /* NSData+Unique.m */; };
+		D4B28EA11C5DE65600259F89 /* MUBottomPopGroupPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B28EA01C5DE65600259F89 /* MUBottomPopGroupPickerView.m */; };
+		D4B28EA41C5E03B300259F89 /* MUBottomPopNumberPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B28EA31C5E03B300259F89 /* MUBottomPopNumberPickerView.m */; };
 		D4B290BB1C3BF6EF003AFE40 /* UIImage+Bounds.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B290A61C3BF6EF003AFE40 /* UIImage+Bounds.m */; };
 		D4B290BC1C3BF6EF003AFE40 /* UIView+GuideView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B290A81C3BF6EF003AFE40 /* UIView+GuideView.m */; };
 		D4B290BD1C3BF6EF003AFE40 /* UIView+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B290AA1C3BF6EF003AFE40 /* UIView+Snapshot.m */; };
@@ -172,6 +174,10 @@
 		D48DBD921C06D5FE00D7364E /* NSString+Emoji.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Emoji.m"; sourceTree = "<group>"; };
 		D4A26C6C1BF8A1B300011494 /* NSData+Unique.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Unique.h"; sourceTree = "<group>"; };
 		D4A26C6D1BF8A1B300011494 /* NSData+Unique.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Unique.m"; sourceTree = "<group>"; };
+		D4B28E9F1C5DE65600259F89 /* MUBottomPopGroupPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUBottomPopGroupPickerView.h; sourceTree = "<group>"; };
+		D4B28EA01C5DE65600259F89 /* MUBottomPopGroupPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUBottomPopGroupPickerView.m; sourceTree = "<group>"; };
+		D4B28EA21C5E03B300259F89 /* MUBottomPopNumberPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUBottomPopNumberPickerView.h; sourceTree = "<group>"; };
+		D4B28EA31C5E03B300259F89 /* MUBottomPopNumberPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUBottomPopNumberPickerView.m; sourceTree = "<group>"; };
 		D4B290A51C3BF6EF003AFE40 /* UIImage+Bounds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Bounds.h"; sourceTree = "<group>"; };
 		D4B290A61C3BF6EF003AFE40 /* UIImage+Bounds.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Bounds.m"; sourceTree = "<group>"; };
 		D4B290A71C3BF6EF003AFE40 /* UIView+GuideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GuideView.h"; sourceTree = "<group>"; };
@@ -723,6 +729,10 @@
 				D4B47C6C1C0ACF08007B8575 /* MUBottomPopDatePickerView.m */,
 				D41534AD1C0D81000086FA21 /* MUBottomPopPickerView.h */,
 				D41534AE1C0D81000086FA21 /* MUBottomPopPickerView.m */,
+				D4B28E9F1C5DE65600259F89 /* MUBottomPopGroupPickerView.h */,
+				D4B28EA01C5DE65600259F89 /* MUBottomPopGroupPickerView.m */,
+				D4B28EA21C5E03B300259F89 /* MUBottomPopNumberPickerView.h */,
+				D4B28EA31C5E03B300259F89 /* MUBottomPopNumberPickerView.m */,
 				D4B47C6D1C0ACF08007B8575 /* MUBottomPopView.h */,
 				D4B47C6E1C0ACF08007B8575 /* MUBottomPopView.m */,
 			);
@@ -892,6 +902,7 @@
 				D4B290BC1C3BF6EF003AFE40 /* UIView+GuideView.m in Sources */,
 				D47917801BE3A641003B4C4C /* WelcomeViewController.m in Sources */,
 				D4EA4BFA1BFF4B7B00B68851 /* IPAddress.m in Sources */,
+				D4B28EA11C5DE65600259F89 /* MUBottomPopGroupPickerView.m in Sources */,
 				D479178B1BE3A641003B4C4C /* UIButton+Extension.m in Sources */,
 				D48DBD901C06D5F300D7364E /* NSString+QRCode.m in Sources */,
 				D479178C1BE3A641003B4C4C /* UIColor+Extension.m in Sources */,
@@ -922,6 +933,7 @@
 				D47917811BE3A641003B4C4C /* NSSocket.m in Sources */,
 				D4B47C721C0ACF08007B8575 /* MUBottomPopView.m in Sources */,
 				D479178A1BE3A641003B4C4C /* UIBarButtonItem+Extension.m in Sources */,
+				D4B28EA41C5E03B300259F89 /* MUBottomPopNumberPickerView.m in Sources */,
 				D4B290F11C3BFEA3003AFE40 /* MUFirstTime.m in Sources */,
 				D4C0C43F1C202FA000839875 /* NSDateFormatter+Category.m in Sources */,
 				D47917861BE3A641003B4C4C /* TCPSyncClient.m in Sources */,

@@ -10,6 +10,8 @@
 
 #import "MUBottomPopCityPickerView.h"
 #import "MUBottomPopDatePickerView.h"
+#import "MUBottomPopGroupPickerView.h"
+#import "MUBottomPopNumberPickerView.h"
 #import "MUBottomPopPickerView.h"
 
 #import "UINavigationBar+Extension.h"
@@ -35,6 +37,9 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     [super touchesBegan:touches withEvent:event];
+	[MUBottomPopNumberPickerView showWithMaxValues:@[@(255), @(255), @(255), @(255)] selectedIndex:@[@(192), @(168), @(1), @(101)] animatedOption:MUBottomPopViewAnimatedOptionRebound certainBlock:^(BOOL ok, NSArray<NSNumber *> *maxValues, NSArray<NSNumber *> *selectedIndexes) {
+		
+	}];
 }
 - (IBAction)valueChange:(UISlider *)sender {
 //    [self.navigationController.navigationBar setAlphaBackgroundColor:[UIColor colorWithRed:1 green:0 blue:0 alpha:sender.value]];

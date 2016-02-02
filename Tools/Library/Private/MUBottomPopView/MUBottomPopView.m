@@ -12,6 +12,7 @@
 
 #define animated_duration_normal 0.2
 #define animated_duration_back 0.05
+#define animated_duration_rebound 0.5
 
 #define height_rebound 30
 
@@ -131,8 +132,10 @@ typedef void(^AnimatedCompleted)(BOOL finished);
 
 - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
 //    [super touchesEnded:touches withEvent:event];
-    _hideReason = MUBottomPopViewHideReasonClickShadow;
-    [self hideWithAnimatedOption:self.showAnimatedOption];
+	if (!CGRectContainsPoint(self.pannelView.frame, [touches.anyObject locationInView:self])) {
+		_hideReason = MUBottomPopViewHideReasonClickShadow;
+		[self hideWithAnimatedOption:self.showAnimatedOption];
+	}
 }
 
 - (void)dealloc {
@@ -174,6 +177,12 @@ typedef void(^AnimatedCompleted)(BOOL finished);
         case MUBottomPopViewAnimatedOptionRebound:{
             self.alpha = 0;
             self.pannelView.frame = self.frameForHidePanel;
+			/*
+			[UIView animateWithDuration:animated_duration_rebound delay:0 usingSpringWithDamping:0.5 initialSpringVelocity:1 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+				self.alpha = 1;
+				self.pannelView.frame = self.frameForShowPanel;
+			} completion:self.showCompleted];
+			 */
             [UIView animateWithDuration:animated_duration_normal delay:0 options:UIViewAnimationOptionCurveLinear animations:^{
                 self.alpha = 1;
                 self.pannelView.frame = self.frameForHighPanel;
