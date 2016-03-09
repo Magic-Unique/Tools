@@ -14,6 +14,7 @@ typedef NS_ENUM(NSUInteger, MUToastStyle) {
     MUToastStyleBlurLight,
     MUToastStyleBlack,
     MUToastStyleWhite,
+	MUToastStyleWhiteWithShadow,
     MUToastStyleShine,
 };
 

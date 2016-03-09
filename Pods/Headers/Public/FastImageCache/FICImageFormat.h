@@ -1,1 +1,1 @@
-../../../FastImageCache/FastImageCache/FICImageFormat.h
+../../../FastImageCache/FastImageCache/FastImageCache/FastImageCache/FICImageFormat.h

@@ -20,6 +20,8 @@
 
 @property (nonatomic, strong) UIView *bgView;
 
+@property (nonatomic, strong) UIImageView *shadowView;
+
 @property (nonatomic, assign) CGPoint bottomCenter;
 
 @end
@@ -60,6 +62,7 @@
     self = [super init];
     if (self) {
         self.alpha = 0;
+		[self addSubview:self.shadowView];
     }
     return self;
 }
@@ -126,6 +129,7 @@
 
 - (void)layoutSubviews {
     [super layoutSubviews];
+	self.shadowView.frame = CGRectMake(-4, -4, self.frame.size.width + 8, self.frame.size.height + 8);
     self.titleLabel.center = CGPointMake(self.frame.size.width * 0.5, self.frame.size.height * 0.5);
     self.bgView.frame = self.bounds;
 }
@@ -218,9 +222,26 @@
 - (UILabel *)titleLabel {
     if (!_titleLabel) {
         self.titleLabel = [[UILabel alloc] init];
+		_titleLabel.font = [UIFont systemFontOfSize:13];
         _titleLabel.numberOfLines = 0;
     }
     return _titleLabel;
+}
+
+- (UIImageView *)shadowView {
+	if (!_shadowView) {
+		_shadowView = [UIImageView new];
+//		_shadowView.hidden = YES;
+		UIImage *image = [UIImage imageNamed:MUToastSrcName(@"shadow")];
+		if (!image) {
+			image = [UIImage imageNamed:MUToastFrameworkSrcName(@"shadow")];
+		}
+		NSLog(@"%@", NSStringFromCGSize(image.size));
+		UIEdgeInsets edge = UIEdgeInsetsMake(6, 6, 6, 6);
+		UIImage *bgImage = [image resizableImageWithCapInsets:edge resizingMode:UIImageResizingModeStretch];
+		_shadowView.image = bgImage;
+	}
+	return _shadowView;
 }
 
 @end

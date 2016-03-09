@@ -16,6 +16,8 @@
 
 #import "UINavigationBar+Extension.h"
 
+#import "MUToast.h"
+
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UISlider *r;
 @property (weak, nonatomic) IBOutlet UISlider *g;
@@ -37,9 +39,13 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     [super touchesBegan:touches withEvent:event];
-	[MUBottomPopNumberPickerView showWithMaxValues:@[@(255), @(255), @(255), @(255)] selectedIndex:@[@(192), @(168), @(1), @(101)] animatedOption:MUBottomPopViewAnimatedOptionRebound certainBlock:^(BOOL ok, NSArray<NSNumber *> *maxValues, NSArray<NSNumber *> *selectedIndexes) {
-		
-	}];
+	MUToast *toast = [MUToast toastWithText:@"123" style:MUToastStyleWhite];
+	[toast show];
+//	[MUToast showDurationToastText:@"123" duraion:3];
+	
+//	[MUBottomPopNumberPickerView showWithMaxValues:@[@(255), @(255), @(255), @(255)] selectedIndex:@[@(192), @(168), @(1), @(101)] animatedOption:MUBottomPopViewAnimatedOptionRebound certainBlock:^(BOOL ok, NSArray<NSNumber *> *maxValues, NSArray<NSNumber *> *selectedIndexes) {
+//		
+//	}];
 }
 - (IBAction)valueChange:(UISlider *)sender {
 //    [self.navigationController.navigationBar setAlphaBackgroundColor:[UIColor colorWithRed:1 green:0 blue:0 alpha:sender.value]];

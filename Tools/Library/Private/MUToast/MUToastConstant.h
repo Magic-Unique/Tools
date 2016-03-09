@@ -22,7 +22,7 @@
 #define AnimateDuration 0.3
 #define AnimateToBack   0.1
 
-#define TCornerRadius(r) self.layer.cornerRadius = r; self.layer.masksToBounds = r;
+#define TCornerRadius(r) self.layer.cornerRadius = r; //self.layer.masksToBounds = r;
 #define TSetColor(b, t) self.titleLabel.textColor = t; self.backgroundColor = b;
 
 #define BlackColor      [UIColor blackColor]

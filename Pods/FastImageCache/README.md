@@ -1,6 +1,7 @@
 ![Fast Image Cache Logo](https://s3.amazonaws.com/fast-image-cache/readme-resources/logo.png)
 
 ---
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 Fast Image Cache is an efficient, persistent, and—above all—fast way to store and retrieve images in your iOS application. Part of any good iOS application's user experience is fast, smooth scrolling, and Fast Image Cache helps make this easier.
 
@@ -31,6 +32,7 @@ A significant burden on performance for graphics-rich applications like [Path](h
 - [**1.0**](https://github.com/path/FastImageCache/releases/tag/1.0)   (10/18/2013): Initial release
 - [**1.1**](https://github.com/path/FastImageCache/releases/tag/1.1)   (10/22/2013): Added ARC support and more robust Core Animation byte alignment
 - [**1.2**](https://github.com/path/FastImageCache/releases/tag/1.2)   (10/30/2013): Added support for image format styles and canceling image requests
+- [**1.3**](https://github.com/path/FastImageCache/releases/tag/1.3)   (03/30/2014): Significant bug fixes and performance improvements
 
 ## What Fast Image Cache Does
 
@@ -128,6 +130,12 @@ For example, if an original image is resized by an entity to create a thumbnail 
 
 Image format families can be specified to efficiently make use of a single source image. See [Working with Image Format Families](#working-with-image-format-families) for more information.
 
+### Data Protection
+
+In iOS 4, Apple introduced data protection. When a user's device is locked or turned off, the disk is encrypted. Files written to disk are protected by default, although applications can manually specify the data protection mode for each file it manages. With the advent of new background modes in iOS 7, applications can now execute in the background briefly even while the device is locked. As a result, data protection can cause issues if applications attempt to access files that are encrypted.
+
+Fast Image Cache allows each image format to specify the data protection mode used when creating its backing image table file. Be aware that enabling data protection for image table files means that Fast Image Cache might not be able to read or write image data from or to these files when the disk is encrypted.
+
 ## Requirements
 
 Fast Image Cache requires iOS 6.0 or greater and relies on the following frameworks:
@@ -166,6 +174,10 @@ Before the image cache can be used, it needs to be configured. This must occur e
 Each image format corresponds to an image table that the image cache will use. Image formats that can use the same source image to render the images they store in their image tables should belong to the same [image format family](#working-with-image-format-families). See [Image Table Size](#image-table-size) for more information about how to determine an appropriate maximum count.
 
 ```objective-c
+static NSString *XXImageFormatNameUserThumbnailSmall = @"com.mycompany.myapp.XXImageFormatNameUserThumbnailSmall";
+static NSString *XXImageFormatNameUserThumbnailMedium = @"com.mycompany.myapp.XXImageFormatNameUserThumbnailMedium";
+static NSString *XXImageFormatFamilyUserThumbnails = @"com.mycompany.myapp.XXImageFormatFamilyUserThumbnails";
+
 FICImageFormat *smallUserThumbnailImageFormat = [[FICImageFormat alloc] init];
 smallUserThumbnailImageFormat.name = XXImageFormatNameUserThumbnailSmall;
 smallUserThumbnailImageFormat.family = XXImageFormatFamilyUserThumbnails;
@@ -173,6 +185,7 @@ smallUserThumbnailImageFormat.style = FICImageFormatStyle16BitBGR;
 smallUserThumbnailImageFormat.imageSize = CGSizeMake(50, 50);
 smallUserThumbnailImageFormat.maximumCount = 250;
 smallUserThumbnailImageFormat.devices = FICImageFormatDevicePhone;
+smallUserThumbnailImageFormat.protectionMode = FICImageFormatProtectionModeNone;
 
 FICImageFormat *mediumUserThumbnailImageFormat = [[FICImageFormat alloc] init];
 mediumUserThumbnailImageFormat.name = XXImageFormatNameUserThumbnailMedium;
@@ -181,6 +194,7 @@ mediumUserThumbnailImageFormat.style = FICImageFormatStyle32BitBGRA;
 mediumUserThumbnailImageFormat.imageSize = CGSizeMake(100, 100);
 mediumUserThumbnailImageFormat.maximumCount = 250;
 mediumUserThumbnailImageFormat.devices = FICImageFormatDevicePhone;
+mediumUserThumbnailImageFormat.protectionMode = FICImageFormatProtectionModeNone;
 
 NSArray *imageFormats = @[smallUserThumbnailImageFormat, mediumUserThumbnailImageFormat];
 ```
@@ -365,7 +379,7 @@ When this happens, Fast Image Cache cleans up its internal bookkeeping, and any 
 
 ### Working with Image Format Families
 
-The advantage of classifying image formats into families is that the image cache's delegate can tell the image cache to process entity source images for **all** image formats in a family when **any** image format in that family is processed.
+The advantage of classifying image formats into families is that the image cache's delegate can tell the image cache to process entity source images for **all** image formats in a family when **any** image format in that family is processed. By default, all image formats are processed for a given family unless you implement this delegate and return otherwise. 
 
 ```objective-c
 - (BOOL)imageCache:(FICImageCache *)imageCache shouldProcessAllFormatsInFamily:(NSString *)formatFamily forEntity:(id<FICEntity>)entity {
