@@ -126,10 +126,11 @@ destructiveButtonIndex:(NSInteger)destructiveButtonIndex
 	
 	// Loop variable
 	NSInteger currentIndex = 0;
-	UIAlertActionStyle actionStyle = UIAlertActionStyleDefault;
 	
 	// Loop
 	for (NSString *buttonTitle in buttonTitles) {
+		
+		UIAlertActionStyle actionStyle = UIAlertActionStyleDefault;
 		
 		// Set action style
 		if (cancelButtonIndex == currentIndex) {
