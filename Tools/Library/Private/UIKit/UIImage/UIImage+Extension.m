@@ -11,12 +11,17 @@
 @implementation UIImage (Scale)
 
 + (instancetype)imageWithImage:(UIImage *)image toNewSize:(CGSize)size {
-    UIGraphicsBeginImageContext(size);
+	CGFloat scale = image.scale;
+	CGSize graphicSize = CGSizeMake(size.width * scale, size.height * scale);
+	UIImage *newImage = nil;
+	
+    UIGraphicsBeginImageContext(graphicSize);
     CGRect frame = CGRectZero;
-    frame.size = size;
+    frame.size = graphicSize;
     [image drawInRect:frame];
-    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+    newImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
+	newImage = [UIImage imageWithCGImage:newImage.CGImage scale:scale orientation:UIImageOrientationUp];
     return newImage;
 }
 
@@ -50,18 +55,30 @@
     [color setFill];
     UIRectFillUsingBlendMode(CGRectMake(0, 0, size.width, size.height), kCGBlendModeXOR);
     CGImageRef cgImageRef = CGBitmapContextCreateImage(UIGraphicsGetCurrentContext());
-    
     UIGraphicsEndImageContext();
-    return [UIImage imageWithCGImage:cgImageRef];
+	
+	UIImage *newImage = [UIImage imageWithCGImage:cgImageRef];
+	CGImageRelease(cgImageRef);
+	
+    return newImage;
 }
 
 + (instancetype)imageWithImage:(UIImage *)image mask:(UIImage *)mask option:(UIImageMaskOption)option {
-    UIGraphicsBeginImageContextWithOptions(mask.size, NO, 0);
+	
+	CGFloat scale = mask.scale;
+	CGSize graphicSize = CGSizeMake(mask.size.width * scale, mask.size.height * scale);
+	
+//    UIGraphicsBeginImageContextWithOptions(mask.size, NO, mask.scale);
+	UIGraphicsBeginImageContext(graphicSize);
     CGContextRef context = UIGraphicsGetCurrentContext();
-    
+	
+	CGContextTranslateCTM(context, 0, mask.size.height * scale);
+	CGContextScaleCTM(context, 1.0, -1.0);
+	
     CGRect rect = CGRectZero;
-    rect.size = mask.size;
+	rect.size = graphicSize;
     CGContextClipToMask(context, rect, mask.CGImage);
+	
     //调整图片rect
     switch (option) {
         case UIImageMaskOptionFillWithScale:
@@ -105,11 +122,15 @@
         default:
             break;
     }
-    
+	CGContextTranslateCTM(context, 0, mask.size.height * scale);
+	CGContextScaleCTM(context, 1.0, -1.0);
+	
     [image drawInRect:rect];
     UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+	
     UIGraphicsEndImageContext();
-    return newImage;
+	newImage = [UIImage imageWithCGImage:newImage.CGImage scale:scale orientation:UIImageOrientationUp];
+	return newImage;
 }
 
 

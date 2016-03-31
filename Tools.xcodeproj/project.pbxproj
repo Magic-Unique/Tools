@@ -64,6 +64,9 @@
 		D48DBD901C06D5F300D7364E /* NSString+QRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = D48DBD8D1C06D5F300D7364E /* NSString+QRCode.m */; };
 		D48DBD931C06D5FE00D7364E /* NSString+Emoji.m in Sources */ = {isa = PBXBuildFile; fileRef = D48DBD921C06D5FE00D7364E /* NSString+Emoji.m */; };
 		D4A26C6E1BF8A1B300011494 /* NSData+Unique.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A26C6D1BF8A1B300011494 /* NSData+Unique.m */; };
+		D4A3AC1F1CA3860300F84E08 /* iconfont-wechat1193418easyiconnet@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A3AC1E1CA3860300F84E08 /* iconfont-wechat1193418easyiconnet@2x.png */; };
+		D4A3AC211CA3863700F84E08 /* header.JPG in Resources */ = {isa = PBXBuildFile; fileRef = D4A3AC201CA3863700F84E08 /* header.JPG */; };
+		D4A3AC4D1CA38EA600F84E08 /* iconfont-wechat1193418easyiconnet-2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A3AC4C1CA38EA600F84E08 /* iconfont-wechat1193418easyiconnet-2@2x.png */; };
 		D4B28EA11C5DE65600259F89 /* MUBottomPopGroupPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B28EA01C5DE65600259F89 /* MUBottomPopGroupPickerView.m */; };
 		D4B28EA41C5E03B300259F89 /* MUBottomPopNumberPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B28EA31C5E03B300259F89 /* MUBottomPopNumberPickerView.m */; };
 		D4B290BB1C3BF6EF003AFE40 /* UIImage+Bounds.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B290A61C3BF6EF003AFE40 /* UIImage+Bounds.m */; };
@@ -204,6 +207,9 @@
 		D48DBD921C06D5FE00D7364E /* NSString+Emoji.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Emoji.m"; sourceTree = "<group>"; };
 		D4A26C6C1BF8A1B300011494 /* NSData+Unique.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Unique.h"; sourceTree = "<group>"; };
 		D4A26C6D1BF8A1B300011494 /* NSData+Unique.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Unique.m"; sourceTree = "<group>"; };
+		D4A3AC1E1CA3860300F84E08 /* iconfont-wechat1193418easyiconnet@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconfont-wechat1193418easyiconnet@2x.png"; sourceTree = "<group>"; };
+		D4A3AC201CA3863700F84E08 /* header.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = header.JPG; sourceTree = "<group>"; };
+		D4A3AC4C1CA38EA600F84E08 /* iconfont-wechat1193418easyiconnet-2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconfont-wechat1193418easyiconnet-2@2x.png"; sourceTree = "<group>"; };
 		D4B28E9F1C5DE65600259F89 /* MUBottomPopGroupPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUBottomPopGroupPickerView.h; sourceTree = "<group>"; };
 		D4B28EA01C5DE65600259F89 /* MUBottomPopGroupPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUBottomPopGroupPickerView.m; sourceTree = "<group>"; };
 		D4B28EA21C5E03B300259F89 /* MUBottomPopNumberPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUBottomPopNumberPickerView.h; sourceTree = "<group>"; };
@@ -677,6 +683,9 @@
 		D479169C1BE3A640003B4C4C /* UIImage */ = {
 			isa = PBXGroup;
 			children = (
+				D4A3AC4C1CA38EA600F84E08 /* iconfont-wechat1193418easyiconnet-2@2x.png */,
+				D4A3AC201CA3863700F84E08 /* header.JPG */,
+				D4A3AC1E1CA3860300F84E08 /* iconfont-wechat1193418easyiconnet@2x.png */,
 				D479169D1BE3A640003B4C4C /* UIImage+Extension.h */,
 				D479169E1BE3A640003B4C4C /* UIImage+Extension.m */,
 			);
@@ -917,6 +926,7 @@
 			files = (
 				D479177E1BE3A641003B4C4C /* README in Resources */,
 				D47917E81BE3A641003B4C4C /* 市区+县.plist in Resources */,
+				D4A3AC211CA3863700F84E08 /* header.JPG in Resources */,
 				D479164B1BE3A616003B4C4C /* LaunchScreen.storyboard in Resources */,
 				D47916481BE3A616003B4C4C /* Assets.xcassets in Resources */,
 				3B3138E91BF1DBF20059A0DE /* Toast.bundle in Resources */,
@@ -926,6 +936,8 @@
 				D47916461BE3A616003B4C4C /* Main.storyboard in Resources */,
 				D41534B11C0D8C360086FA21 /* UINavigationBar.bundle in Resources */,
 				D4B290C11C3BF6EF003AFE40 /* guide_arrow_right@2x.png in Resources */,
+				D4A3AC4D1CA38EA600F84E08 /* iconfont-wechat1193418easyiconnet-2@2x.png in Resources */,
+				D4A3AC1F1CA3860300F84E08 /* iconfont-wechat1193418easyiconnet@2x.png in Resources */,
 				D4B47C741C0AD61A007B8575 /* pcr.plist in Resources */,
 				D47917E91BE3A641003B4C4C /* 省份+市区.plist in Resources */,
 				D4B290C01C3BF6EF003AFE40 /* guide_arrow_left@2x.png in Resources */,
