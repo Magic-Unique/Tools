@@ -41,15 +41,6 @@
 		D479177E1BE3A641003B4C4C /* README in Resources */ = {isa = PBXBuildFile; fileRef = D47916691BE3A640003B4C4C /* README */; };
 		D479177F1BE3A641003B4C4C /* MUAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D479166C1BE3A640003B4C4C /* MUAudioPlayer.m */; };
 		D47917801BE3A641003B4C4C /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D47916701BE3A640003B4C4C /* WelcomeViewController.m */; };
-		D47917811BE3A641003B4C4C /* NSSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = D47916741BE3A640003B4C4C /* NSSocket.m */; };
-		D47917821BE3A641003B4C4C /* ytcpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = D47916751BE3A640003B4C4C /* ytcpsocket.c */; };
-		D47917831BE3A641003B4C4C /* yudpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = D47916771BE3A640003B4C4C /* yudpsocket.c */; };
-		D47917841BE3A641003B4C4C /* TCPAsyncClient.m in Sources */ = {isa = PBXBuildFile; fileRef = D479167E1BE3A640003B4C4C /* TCPAsyncClient.m */; };
-		D47917851BE3A641003B4C4C /* TCPAsyncServer.m in Sources */ = {isa = PBXBuildFile; fileRef = D47916821BE3A640003B4C4C /* TCPAsyncServer.m */; };
-		D47917861BE3A641003B4C4C /* TCPSyncClient.m in Sources */ = {isa = PBXBuildFile; fileRef = D47916861BE3A640003B4C4C /* TCPSyncClient.m */; };
-		D47917871BE3A641003B4C4C /* TCPSyncServer.m in Sources */ = {isa = PBXBuildFile; fileRef = D479168A1BE3A640003B4C4C /* TCPSyncServer.m */; };
-		D47917881BE3A641003B4C4C /* UDPAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = D479168E1BE3A640003B4C4C /* UDPAsyncSocket.m */; };
-		D47917891BE3A641003B4C4C /* UDPSyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = D47916911BE3A640003B4C4C /* UDPSyncSocket.m */; };
 		D479178A1BE3A641003B4C4C /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D47916951BE3A640003B4C4C /* UIBarButtonItem+Extension.m */; };
 		D479178B1BE3A641003B4C4C /* UIButton+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D47916981BE3A640003B4C4C /* UIButton+Extension.m */; };
 		D479178C1BE3A641003B4C4C /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D479169B1BE3A640003B4C4C /* UIColor+Extension.m */; };
@@ -59,6 +50,16 @@
 		D47917E81BE3A641003B4C4C /* 市区+县.plist in Resources */ = {isa = PBXBuildFile; fileRef = D47917741BE3A641003B4C4C /* 市区+县.plist */; };
 		D47917E91BE3A641003B4C4C /* 省份+市区.plist in Resources */ = {isa = PBXBuildFile; fileRef = D47917751BE3A641003B4C4C /* 省份+市区.plist */; };
 		D47B406A1C11901400707258 /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D47B40691C11901400707258 /* NSDate+Extension.m */; };
+		D480BCB31CBF6CC300D93DFD /* dispatch.c in Sources */ = {isa = PBXBuildFile; fileRef = D480BC931CBF6CC300D93DFD /* dispatch.c */; };
+		D480BCB41CBF6CC300D93DFD /* NSError+Socket.m in Sources */ = {isa = PBXBuildFile; fileRef = D480BC971CBF6CC300D93DFD /* NSError+Socket.m */; };
+		D480BCB51CBF6CC300D93DFD /* ytcpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = D480BC981CBF6CC300D93DFD /* ytcpsocket.c */; };
+		D480BCB61CBF6CC300D93DFD /* yudpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = D480BC9A1CBF6CC300D93DFD /* yudpsocket.c */; };
+		D480BCB71CBF6CC300D93DFD /* MUAsyncTCPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = D480BCA11CBF6CC300D93DFD /* MUAsyncTCPClient.m */; };
+		D480BCB81CBF6CC300D93DFD /* MUAsyncTCPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = D480BCA41CBF6CC300D93DFD /* MUAsyncTCPServer.m */; };
+		D480BCB91CBF6CC300D93DFD /* MUSyncTCPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = D480BCA81CBF6CC300D93DFD /* MUSyncTCPClient.m */; };
+		D480BCBA1CBF6CC300D93DFD /* MUSyncTCPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = D480BCAB1CBF6CC300D93DFD /* MUSyncTCPServer.m */; };
+		D480BCBB1CBF6CC300D93DFD /* MUAsyncUDPSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = D480BCAF1CBF6CC300D93DFD /* MUAsyncUDPSocket.m */; };
+		D480BCBC1CBF6CC300D93DFD /* MUSyncUDPSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = D480BCB21CBF6CC300D93DFD /* MUSyncUDPSocket.m */; };
 		D48DBD8E1C06D5F300D7364E /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = D48DBD891C06D5F300D7364E /* NSString+Hash.m */; };
 		D48DBD8F1C06D5F300D7364E /* NSString+HRLegal.m in Sources */ = {isa = PBXBuildFile; fileRef = D48DBD8B1C06D5F300D7364E /* NSString+HRLegal.m */; };
 		D48DBD901C06D5F300D7364E /* NSString+QRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = D48DBD8D1C06D5F300D7364E /* NSString+QRCode.m */; };
@@ -159,27 +160,6 @@
 		D479166C1BE3A640003B4C4C /* MUAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUAudioPlayer.m; sourceTree = "<group>"; };
 		D479166F1BE3A640003B4C4C /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
 		D47916701BE3A640003B4C4C /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
-		D47916731BE3A640003B4C4C /* NSSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSSocket.h; sourceTree = "<group>"; };
-		D47916741BE3A640003B4C4C /* NSSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSSocket.m; sourceTree = "<group>"; };
-		D47916751BE3A640003B4C4C /* ytcpsocket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ytcpsocket.c; sourceTree = "<group>"; };
-		D47916761BE3A640003B4C4C /* ytcpsocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ytcpsocket.h; sourceTree = "<group>"; };
-		D47916771BE3A640003B4C4C /* yudpsocket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yudpsocket.c; sourceTree = "<group>"; };
-		D47916781BE3A640003B4C4C /* yudpsocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yudpsocket.h; sourceTree = "<group>"; };
-		D47916791BE3A640003B4C4C /* MUSocke.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUSocke.h; sourceTree = "<group>"; };
-		D479167D1BE3A640003B4C4C /* TCPAsyncClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPAsyncClient.h; sourceTree = "<group>"; };
-		D479167E1BE3A640003B4C4C /* TCPAsyncClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCPAsyncClient.m; sourceTree = "<group>"; };
-		D47916801BE3A640003B4C4C /* TCPAsyncClient_Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPAsyncClient_Extension.h; sourceTree = "<group>"; };
-		D47916811BE3A640003B4C4C /* TCPAsyncServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPAsyncServer.h; sourceTree = "<group>"; };
-		D47916821BE3A640003B4C4C /* TCPAsyncServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCPAsyncServer.m; sourceTree = "<group>"; };
-		D47916851BE3A640003B4C4C /* TCPSyncClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPSyncClient.h; sourceTree = "<group>"; };
-		D47916861BE3A640003B4C4C /* TCPSyncClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCPSyncClient.m; sourceTree = "<group>"; };
-		D47916881BE3A640003B4C4C /* TCPSyncClient_Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPSyncClient_Extension.h; sourceTree = "<group>"; };
-		D47916891BE3A640003B4C4C /* TCPSyncServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPSyncServer.h; sourceTree = "<group>"; };
-		D479168A1BE3A640003B4C4C /* TCPSyncServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCPSyncServer.m; sourceTree = "<group>"; };
-		D479168D1BE3A640003B4C4C /* UDPAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UDPAsyncSocket.h; sourceTree = "<group>"; };
-		D479168E1BE3A640003B4C4C /* UDPAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UDPAsyncSocket.m; sourceTree = "<group>"; };
-		D47916901BE3A640003B4C4C /* UDPSyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UDPSyncSocket.h; sourceTree = "<group>"; };
-		D47916911BE3A640003B4C4C /* UDPSyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UDPSyncSocket.m; sourceTree = "<group>"; };
 		D47916941BE3A640003B4C4C /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
 		D47916951BE3A640003B4C4C /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
 		D47916971BE3A640003B4C4C /* UIButton+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Extension.h"; sourceTree = "<group>"; };
@@ -197,6 +177,28 @@
 		D47917751BE3A641003B4C4C /* 省份+市区.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "省份+市区.plist"; sourceTree = "<group>"; };
 		D47B40681C11901400707258 /* NSDate+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extension.h"; sourceTree = "<group>"; };
 		D47B40691C11901400707258 /* NSDate+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extension.m"; sourceTree = "<group>"; };
+		D480BC931CBF6CC300D93DFD /* dispatch.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dispatch.c; sourceTree = "<group>"; };
+		D480BC941CBF6CC300D93DFD /* dispatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dispatch.h; sourceTree = "<group>"; };
+		D480BC951CBF6CC300D93DFD /* MUSocketConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUSocketConst.h; sourceTree = "<group>"; };
+		D480BC961CBF6CC300D93DFD /* NSError+Socket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+Socket.h"; sourceTree = "<group>"; };
+		D480BC971CBF6CC300D93DFD /* NSError+Socket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+Socket.m"; sourceTree = "<group>"; };
+		D480BC981CBF6CC300D93DFD /* ytcpsocket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ytcpsocket.c; sourceTree = "<group>"; };
+		D480BC991CBF6CC300D93DFD /* ytcpsocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ytcpsocket.h; sourceTree = "<group>"; };
+		D480BC9A1CBF6CC300D93DFD /* yudpsocket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yudpsocket.c; sourceTree = "<group>"; };
+		D480BC9B1CBF6CC300D93DFD /* yudpsocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yudpsocket.h; sourceTree = "<group>"; };
+		D480BC9C1CBF6CC300D93DFD /* MUSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUSocket.h; sourceTree = "<group>"; };
+		D480BCA01CBF6CC300D93DFD /* MUAsyncTCPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUAsyncTCPClient.h; sourceTree = "<group>"; };
+		D480BCA11CBF6CC300D93DFD /* MUAsyncTCPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUAsyncTCPClient.m; sourceTree = "<group>"; };
+		D480BCA31CBF6CC300D93DFD /* MUAsyncTCPServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUAsyncTCPServer.h; sourceTree = "<group>"; };
+		D480BCA41CBF6CC300D93DFD /* MUAsyncTCPServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUAsyncTCPServer.m; sourceTree = "<group>"; };
+		D480BCA71CBF6CC300D93DFD /* MUSyncTCPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUSyncTCPClient.h; sourceTree = "<group>"; };
+		D480BCA81CBF6CC300D93DFD /* MUSyncTCPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUSyncTCPClient.m; sourceTree = "<group>"; };
+		D480BCAA1CBF6CC300D93DFD /* MUSyncTCPServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUSyncTCPServer.h; sourceTree = "<group>"; };
+		D480BCAB1CBF6CC300D93DFD /* MUSyncTCPServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUSyncTCPServer.m; sourceTree = "<group>"; };
+		D480BCAE1CBF6CC300D93DFD /* MUAsyncUDPSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUAsyncUDPSocket.h; sourceTree = "<group>"; };
+		D480BCAF1CBF6CC300D93DFD /* MUAsyncUDPSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUAsyncUDPSocket.m; sourceTree = "<group>"; };
+		D480BCB11CBF6CC300D93DFD /* MUSyncUDPSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUSyncUDPSocket.h; sourceTree = "<group>"; };
+		D480BCB21CBF6CC300D93DFD /* MUSyncUDPSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUSyncUDPSocket.m; sourceTree = "<group>"; };
 		D48DBD881C06D5F300D7364E /* NSString+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hash.h"; sourceTree = "<group>"; };
 		D48DBD891C06D5F300D7364E /* NSString+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hash.m"; sourceTree = "<group>"; };
 		D48DBD8A1C06D5F300D7364E /* NSString+HRLegal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HRLegal.h"; sourceTree = "<group>"; };
@@ -427,7 +429,7 @@
 				D457BE081C2903D10097035A /* MUPageChooser */,
 				3B3138E31BF1DBF20059A0DE /* MUToast */,
 				D479166D1BE3A640003B4C4C /* Project */,
-				D47916711BE3A640003B4C4C /* Socket */,
+				D480BC911CBF6CC300D93DFD /* Socket */,
 				D47916921BE3A640003B4C4C /* UIKit */,
 			);
 			path = Private;
@@ -515,122 +517,6 @@
 				D47916701BE3A640003B4C4C /* WelcomeViewController.m */,
 			);
 			path = WelcomeViewController;
-			sourceTree = "<group>";
-		};
-		D47916711BE3A640003B4C4C /* Socket */ = {
-			isa = PBXGroup;
-			children = (
-				D47916721BE3A640003B4C4C /* Library */,
-				D47916791BE3A640003B4C4C /* MUSocke.h */,
-				D479167A1BE3A640003B4C4C /* TCPFramework */,
-				D479168B1BE3A640003B4C4C /* UDPFramework */,
-			);
-			path = Socket;
-			sourceTree = "<group>";
-		};
-		D47916721BE3A640003B4C4C /* Library */ = {
-			isa = PBXGroup;
-			children = (
-				D47916731BE3A640003B4C4C /* NSSocket.h */,
-				D47916741BE3A640003B4C4C /* NSSocket.m */,
-				D47916751BE3A640003B4C4C /* ytcpsocket.c */,
-				D47916761BE3A640003B4C4C /* ytcpsocket.h */,
-				D47916771BE3A640003B4C4C /* yudpsocket.c */,
-				D47916781BE3A640003B4C4C /* yudpsocket.h */,
-			);
-			path = Library;
-			sourceTree = "<group>";
-		};
-		D479167A1BE3A640003B4C4C /* TCPFramework */ = {
-			isa = PBXGroup;
-			children = (
-				D479167B1BE3A640003B4C4C /* TCPAsyncSocket */,
-				D47916831BE3A640003B4C4C /* TCPSyncSocket */,
-			);
-			path = TCPFramework;
-			sourceTree = "<group>";
-		};
-		D479167B1BE3A640003B4C4C /* TCPAsyncSocket */ = {
-			isa = PBXGroup;
-			children = (
-				D479167C1BE3A640003B4C4C /* TCPAsyncClient */,
-				D479167F1BE3A640003B4C4C /* TCPAsyncServer */,
-			);
-			path = TCPAsyncSocket;
-			sourceTree = "<group>";
-		};
-		D479167C1BE3A640003B4C4C /* TCPAsyncClient */ = {
-			isa = PBXGroup;
-			children = (
-				D479167D1BE3A640003B4C4C /* TCPAsyncClient.h */,
-				D479167E1BE3A640003B4C4C /* TCPAsyncClient.m */,
-			);
-			path = TCPAsyncClient;
-			sourceTree = "<group>";
-		};
-		D479167F1BE3A640003B4C4C /* TCPAsyncServer */ = {
-			isa = PBXGroup;
-			children = (
-				D47916801BE3A640003B4C4C /* TCPAsyncClient_Extension.h */,
-				D47916811BE3A640003B4C4C /* TCPAsyncServer.h */,
-				D47916821BE3A640003B4C4C /* TCPAsyncServer.m */,
-			);
-			path = TCPAsyncServer;
-			sourceTree = "<group>";
-		};
-		D47916831BE3A640003B4C4C /* TCPSyncSocket */ = {
-			isa = PBXGroup;
-			children = (
-				D47916841BE3A640003B4C4C /* TCPSyncClient */,
-				D47916871BE3A640003B4C4C /* TCPSyncServer */,
-			);
-			path = TCPSyncSocket;
-			sourceTree = "<group>";
-		};
-		D47916841BE3A640003B4C4C /* TCPSyncClient */ = {
-			isa = PBXGroup;
-			children = (
-				D47916851BE3A640003B4C4C /* TCPSyncClient.h */,
-				D47916861BE3A640003B4C4C /* TCPSyncClient.m */,
-			);
-			path = TCPSyncClient;
-			sourceTree = "<group>";
-		};
-		D47916871BE3A640003B4C4C /* TCPSyncServer */ = {
-			isa = PBXGroup;
-			children = (
-				D47916881BE3A640003B4C4C /* TCPSyncClient_Extension.h */,
-				D47916891BE3A640003B4C4C /* TCPSyncServer.h */,
-				D479168A1BE3A640003B4C4C /* TCPSyncServer.m */,
-			);
-			path = TCPSyncServer;
-			sourceTree = "<group>";
-		};
-		D479168B1BE3A640003B4C4C /* UDPFramework */ = {
-			isa = PBXGroup;
-			children = (
-				D479168C1BE3A640003B4C4C /* UDPAsyncSocket */,
-				D479168F1BE3A640003B4C4C /* UDPSyncSocket */,
-			);
-			path = UDPFramework;
-			sourceTree = "<group>";
-		};
-		D479168C1BE3A640003B4C4C /* UDPAsyncSocket */ = {
-			isa = PBXGroup;
-			children = (
-				D479168D1BE3A640003B4C4C /* UDPAsyncSocket.h */,
-				D479168E1BE3A640003B4C4C /* UDPAsyncSocket.m */,
-			);
-			path = UDPAsyncSocket;
-			sourceTree = "<group>";
-		};
-		D479168F1BE3A640003B4C4C /* UDPSyncSocket */ = {
-			isa = PBXGroup;
-			children = (
-				D47916901BE3A640003B4C4C /* UDPSyncSocket.h */,
-				D47916911BE3A640003B4C4C /* UDPSyncSocket.m */,
-			);
-			path = UDPSyncSocket;
 			sourceTree = "<group>";
 		};
 		D47916921BE3A640003B4C4C /* UIKit */ = {
@@ -742,6 +628,123 @@
 				D4C0C4461C20307C00839875 /* DateDescription.strings */,
 			);
 			path = NSDate;
+			sourceTree = "<group>";
+		};
+		D480BC911CBF6CC300D93DFD /* Socket */ = {
+			isa = PBXGroup;
+			children = (
+				D480BC921CBF6CC300D93DFD /* Library */,
+				D480BC9C1CBF6CC300D93DFD /* MUSocket.h */,
+				D480BC9D1CBF6CC300D93DFD /* TCPFramework */,
+				D480BCAC1CBF6CC300D93DFD /* UDPFramework */,
+			);
+			path = Socket;
+			sourceTree = "<group>";
+		};
+		D480BC921CBF6CC300D93DFD /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				D480BC931CBF6CC300D93DFD /* dispatch.c */,
+				D480BC941CBF6CC300D93DFD /* dispatch.h */,
+				D480BC951CBF6CC300D93DFD /* MUSocketConst.h */,
+				D480BC961CBF6CC300D93DFD /* NSError+Socket.h */,
+				D480BC971CBF6CC300D93DFD /* NSError+Socket.m */,
+				D480BC981CBF6CC300D93DFD /* ytcpsocket.c */,
+				D480BC991CBF6CC300D93DFD /* ytcpsocket.h */,
+				D480BC9A1CBF6CC300D93DFD /* yudpsocket.c */,
+				D480BC9B1CBF6CC300D93DFD /* yudpsocket.h */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		D480BC9D1CBF6CC300D93DFD /* TCPFramework */ = {
+			isa = PBXGroup;
+			children = (
+				D480BC9E1CBF6CC300D93DFD /* TCPAsyncSocket */,
+				D480BCA51CBF6CC300D93DFD /* TCPSyncSocket */,
+			);
+			path = TCPFramework;
+			sourceTree = "<group>";
+		};
+		D480BC9E1CBF6CC300D93DFD /* TCPAsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				D480BC9F1CBF6CC300D93DFD /* TCPAsyncClient */,
+				D480BCA21CBF6CC300D93DFD /* TCPAsyncServer */,
+			);
+			path = TCPAsyncSocket;
+			sourceTree = "<group>";
+		};
+		D480BC9F1CBF6CC300D93DFD /* TCPAsyncClient */ = {
+			isa = PBXGroup;
+			children = (
+				D480BCA01CBF6CC300D93DFD /* MUAsyncTCPClient.h */,
+				D480BCA11CBF6CC300D93DFD /* MUAsyncTCPClient.m */,
+			);
+			path = TCPAsyncClient;
+			sourceTree = "<group>";
+		};
+		D480BCA21CBF6CC300D93DFD /* TCPAsyncServer */ = {
+			isa = PBXGroup;
+			children = (
+				D480BCA31CBF6CC300D93DFD /* MUAsyncTCPServer.h */,
+				D480BCA41CBF6CC300D93DFD /* MUAsyncTCPServer.m */,
+			);
+			path = TCPAsyncServer;
+			sourceTree = "<group>";
+		};
+		D480BCA51CBF6CC300D93DFD /* TCPSyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				D480BCA61CBF6CC300D93DFD /* TCPSyncClient */,
+				D480BCA91CBF6CC300D93DFD /* TCPSyncServer */,
+			);
+			path = TCPSyncSocket;
+			sourceTree = "<group>";
+		};
+		D480BCA61CBF6CC300D93DFD /* TCPSyncClient */ = {
+			isa = PBXGroup;
+			children = (
+				D480BCA71CBF6CC300D93DFD /* MUSyncTCPClient.h */,
+				D480BCA81CBF6CC300D93DFD /* MUSyncTCPClient.m */,
+			);
+			path = TCPSyncClient;
+			sourceTree = "<group>";
+		};
+		D480BCA91CBF6CC300D93DFD /* TCPSyncServer */ = {
+			isa = PBXGroup;
+			children = (
+				D480BCAA1CBF6CC300D93DFD /* MUSyncTCPServer.h */,
+				D480BCAB1CBF6CC300D93DFD /* MUSyncTCPServer.m */,
+			);
+			path = TCPSyncServer;
+			sourceTree = "<group>";
+		};
+		D480BCAC1CBF6CC300D93DFD /* UDPFramework */ = {
+			isa = PBXGroup;
+			children = (
+				D480BCAD1CBF6CC300D93DFD /* UDPAsyncSocket */,
+				D480BCB01CBF6CC300D93DFD /* UDPSyncSocket */,
+			);
+			path = UDPFramework;
+			sourceTree = "<group>";
+		};
+		D480BCAD1CBF6CC300D93DFD /* UDPAsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				D480BCAE1CBF6CC300D93DFD /* MUAsyncUDPSocket.h */,
+				D480BCAF1CBF6CC300D93DFD /* MUAsyncUDPSocket.m */,
+			);
+			path = UDPAsyncSocket;
+			sourceTree = "<group>";
+		};
+		D480BCB01CBF6CC300D93DFD /* UDPSyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				D480BCB11CBF6CC300D93DFD /* MUSyncUDPSocket.h */,
+				D480BCB21CBF6CC300D93DFD /* MUSyncUDPSocket.m */,
+			);
+			path = UDPSyncSocket;
 			sourceTree = "<group>";
 		};
 		D4A26C6B1BF8A18C00011494 /* NSData */ = {
@@ -1008,23 +1011,25 @@
 				D4EA4BFA1BFF4B7B00B68851 /* IPAddress.m in Sources */,
 				D4B28EA11C5DE65600259F89 /* MUBottomPopGroupPickerView.m in Sources */,
 				D479178B1BE3A641003B4C4C /* UIButton+Extension.m in Sources */,
+				D480BCBA1CBF6CC300D93DFD /* MUSyncTCPServer.m in Sources */,
+				D480BCB51CBF6CC300D93DFD /* ytcpsocket.c in Sources */,
 				D48DBD901C06D5F300D7364E /* NSString+QRCode.m in Sources */,
 				D479178C1BE3A641003B4C4C /* UIColor+Extension.m in Sources */,
-				D47917871BE3A641003B4C4C /* TCPSyncServer.m in Sources */,
 				D47916431BE3A616003B4C4C /* ViewController.m in Sources */,
 				D41534AF1C0D81000086FA21 /* MUBottomPopPickerView.m in Sources */,
 				D4B290C51C3BF6EF003AFE40 /* MUGuideContentView.m in Sources */,
 				D4C19AA71C0F21EC004B75C0 /* MUCirculateRollView.m in Sources */,
 				D4B290BD1C3BF6EF003AFE40 /* UIView+Snapshot.m in Sources */,
 				D4A26C6E1BF8A1B300011494 /* NSData+Unique.m in Sources */,
-				D47917891BE3A641003B4C4C /* UDPSyncSocket.m in Sources */,
 				D4B290C61C3BF6EF003AFE40 /* MUGuideTargetView.m in Sources */,
 				D479177D1BE3A641003B4C4C /* NSObject+Model.m in Sources */,
 				D4B290BF1C3BF6EF003AFE40 /* MUGuideView.m in Sources */,
+				D480BCB41CBF6CC300D93DFD /* NSError+Socket.m in Sources */,
 				D47B406A1C11901400707258 /* NSDate+Extension.m in Sources */,
 				D47917781BE3A641003B4C4C /* NSString+Extension.m in Sources */,
-				D47917821BE3A641003B4C4C /* ytcpsocket.c in Sources */,
 				D470ADAE1C902D030047D3F1 /* UITableView+SeparatorInset.m in Sources */,
+				D480BCB81CBF6CC300D93DFD /* MUAsyncTCPServer.m in Sources */,
+				D480BCBC1CBF6CC300D93DFD /* MUSyncUDPSocket.m in Sources */,
 				D470ADAD1C902D030047D3F1 /* UITableView+SeparatorColor.m in Sources */,
 				D470ADB11C902D1E0047D3F1 /* UIView+Snapshot.m in Sources */,
 				D479178F1BE3A641003B4C4C /* UIView+Extension.m in Sources */,
@@ -1032,38 +1037,37 @@
 				D4B47C701C0ACF08007B8575 /* MUBottomPopCityPickerView.m in Sources */,
 				D4B47C711C0ACF08007B8575 /* MUBottomPopDatePickerView.m in Sources */,
 				D479177C1BE3A641003B4C4C /* MUVar.m in Sources */,
+				D480BCB31CBF6CC300D93DFD /* dispatch.c in Sources */,
 				D479177A1BE3A641003B4C4C /* MUClassSet.m in Sources */,
 				D48DBD931C06D5FE00D7364E /* NSString+Emoji.m in Sources */,
 				D470ADA71C902CE50047D3F1 /* UILabel+SizeToFit.m in Sources */,
-				D47917831BE3A641003B4C4C /* yudpsocket.c in Sources */,
-				D47917851BE3A641003B4C4C /* TCPAsyncServer.m in Sources */,
 				D470ADA01C902C770047D3F1 /* NSString+Size.m in Sources */,
 				D48DBD8F1C06D5F300D7364E /* NSString+HRLegal.m in Sources */,
-				D47917811BE3A641003B4C4C /* NSSocket.m in Sources */,
 				D4B47C721C0ACF08007B8575 /* MUBottomPopView.m in Sources */,
 				D479178A1BE3A641003B4C4C /* UIBarButtonItem+Extension.m in Sources */,
 				D4B28EA41C5E03B300259F89 /* MUBottomPopNumberPickerView.m in Sources */,
 				D4B290F11C3BFEA3003AFE40 /* MUFirstTime.m in Sources */,
 				D4C0C43F1C202FA000839875 /* NSDateFormatter+Category.m in Sources */,
-				D47917861BE3A641003B4C4C /* TCPSyncClient.m in Sources */,
 				D479177F1BE3A641003B4C4C /* MUAudioPlayer.m in Sources */,
 				3B3138E81BF1DBF20059A0DE /* MUToast.m in Sources */,
 				D4B290BB1C3BF6EF003AFE40 /* UIImage+Bounds.m in Sources */,
 				D470ADB81C902D420047D3F1 /* UIViewController+Alert.m in Sources */,
 				D47917791BE3A641003B4C4C /* MUClassGuide.m in Sources */,
+				D480BCBB1CBF6CC300D93DFD /* MUAsyncUDPSocket.m in Sources */,
 				D48DBD8E1C06D5F300D7364E /* NSString+Hash.m in Sources */,
 				D4B290BE1C3BF6EF003AFE40 /* MUGuideItem.m in Sources */,
 				D457BE0B1C2903D10097035A /* MUPageChooser.m in Sources */,
 				D479177B1BE3A641003B4C4C /* MUPropertySet.m in Sources */,
 				D470ADB71C902D420047D3F1 /* UIViewController+Additem.m in Sources */,
 				D479178D1BE3A641003B4C4C /* UIImage+Extension.m in Sources */,
-				D47917881BE3A641003B4C4C /* UDPAsyncSocket.m in Sources */,
 				D47916401BE3A616003B4C4C /* AppDelegate.m in Sources */,
 				3B3138F21BF1DCAA0059A0DE /* NSProperty.m in Sources */,
+				D480BCB91CBF6CC300D93DFD /* MUSyncTCPClient.m in Sources */,
+				D480BCB61CBF6CC300D93DFD /* yudpsocket.c in Sources */,
 				D470ADA31C902CAC0047D3F1 /* UIColor+Extensions.m in Sources */,
-				D47917841BE3A641003B4C4C /* TCPAsyncClient.m in Sources */,
 				D479163D1BE3A616003B4C4C /* main.m in Sources */,
 				D4B290C41C3BF6EF003AFE40 /* MUGuideArrowView.m in Sources */,
+				D480BCB71CBF6CC300D93DFD /* MUAsyncTCPClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
