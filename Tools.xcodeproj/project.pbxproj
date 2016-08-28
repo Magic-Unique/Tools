@@ -64,6 +64,8 @@
 		D48DBD8F1C06D5F300D7364E /* NSString+HRLegal.m in Sources */ = {isa = PBXBuildFile; fileRef = D48DBD8B1C06D5F300D7364E /* NSString+HRLegal.m */; };
 		D48DBD901C06D5F300D7364E /* NSString+QRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = D48DBD8D1C06D5F300D7364E /* NSString+QRCode.m */; };
 		D48DBD931C06D5FE00D7364E /* NSString+Emoji.m in Sources */ = {isa = PBXBuildFile; fileRef = D48DBD921C06D5FE00D7364E /* NSString+Emoji.m */; };
+		D49561111D64A8F000CAF94D /* MUDeallocTaskTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = D495610E1D64A8F000CAF94D /* MUDeallocTaskTarget.m */; };
+		D49561121D64A8F000CAF94D /* NSObject+MUTask.m in Sources */ = {isa = PBXBuildFile; fileRef = D49561101D64A8F000CAF94D /* NSObject+MUTask.m */; };
 		D4A26C6E1BF8A1B300011494 /* NSData+Unique.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A26C6D1BF8A1B300011494 /* NSData+Unique.m */; };
 		D4A3AC1F1CA3860300F84E08 /* iconfont-wechat1193418easyiconnet@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A3AC1E1CA3860300F84E08 /* iconfont-wechat1193418easyiconnet@2x.png */; };
 		D4A3AC211CA3863700F84E08 /* header.JPG in Resources */ = {isa = PBXBuildFile; fileRef = D4A3AC201CA3863700F84E08 /* header.JPG */; };
@@ -207,6 +209,11 @@
 		D48DBD8D1C06D5F300D7364E /* NSString+QRCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+QRCode.m"; sourceTree = "<group>"; };
 		D48DBD911C06D5FE00D7364E /* NSString+Emoji.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Emoji.h"; sourceTree = "<group>"; };
 		D48DBD921C06D5FE00D7364E /* NSString+Emoji.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Emoji.m"; sourceTree = "<group>"; };
+		D495610C1D64A8F000CAF94D /* MUDeallocTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUDeallocTask.h; sourceTree = "<group>"; };
+		D495610D1D64A8F000CAF94D /* MUDeallocTaskTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUDeallocTaskTarget.h; sourceTree = "<group>"; };
+		D495610E1D64A8F000CAF94D /* MUDeallocTaskTarget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUDeallocTaskTarget.m; sourceTree = "<group>"; };
+		D495610F1D64A8F000CAF94D /* NSObject+MUTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MUTask.h"; sourceTree = "<group>"; };
+		D49561101D64A8F000CAF94D /* NSObject+MUTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MUTask.m"; sourceTree = "<group>"; };
 		D4A26C6C1BF8A1B300011494 /* NSData+Unique.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Unique.h"; sourceTree = "<group>"; };
 		D4A26C6D1BF8A1B300011494 /* NSData+Unique.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Unique.m"; sourceTree = "<group>"; };
 		D4A3AC1E1CA3860300F84E08 /* iconfont-wechat1193418easyiconnet@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconfont-wechat1193418easyiconnet@2x.png"; sourceTree = "<group>"; };
@@ -424,6 +431,7 @@
 				D479166A1BE3A640003B4C4C /* MUAudioPlayer */,
 				D4B47C671C0ACF08007B8575 /* MUBottomPopView */,
 				D4C19AA11C0F21EC004B75C0 /* MUCirculateRoll */,
+				D495610B1D64A8F000CAF94D /* MUDeallocTask */,
 				D4B290EE1C3BFEA3003AFE40 /* MUFirstTime */,
 				D4B290A31C3BF6EF003AFE40 /* MUGuideView */,
 				D457BE081C2903D10097035A /* MUPageChooser */,
@@ -747,6 +755,18 @@
 			path = UDPSyncSocket;
 			sourceTree = "<group>";
 		};
+		D495610B1D64A8F000CAF94D /* MUDeallocTask */ = {
+			isa = PBXGroup;
+			children = (
+				D495610C1D64A8F000CAF94D /* MUDeallocTask.h */,
+				D495610D1D64A8F000CAF94D /* MUDeallocTaskTarget.h */,
+				D495610E1D64A8F000CAF94D /* MUDeallocTaskTarget.m */,
+				D495610F1D64A8F000CAF94D /* NSObject+MUTask.h */,
+				D49561101D64A8F000CAF94D /* NSObject+MUTask.m */,
+			);
+			path = MUDeallocTask;
+			sourceTree = "<group>";
+		};
 		D4A26C6B1BF8A18C00011494 /* NSData */ = {
 			isa = PBXGroup;
 			children = (
@@ -1014,6 +1034,7 @@
 				D480BCBA1CBF6CC300D93DFD /* MUSyncTCPServer.m in Sources */,
 				D480BCB51CBF6CC300D93DFD /* ytcpsocket.c in Sources */,
 				D48DBD901C06D5F300D7364E /* NSString+QRCode.m in Sources */,
+				D49561111D64A8F000CAF94D /* MUDeallocTaskTarget.m in Sources */,
 				D479178C1BE3A641003B4C4C /* UIColor+Extension.m in Sources */,
 				D47916431BE3A616003B4C4C /* ViewController.m in Sources */,
 				D41534AF1C0D81000086FA21 /* MUBottomPopPickerView.m in Sources */,
@@ -1033,6 +1054,7 @@
 				D470ADAD1C902D030047D3F1 /* UITableView+SeparatorColor.m in Sources */,
 				D470ADB11C902D1E0047D3F1 /* UIView+Snapshot.m in Sources */,
 				D479178F1BE3A641003B4C4C /* UIView+Extension.m in Sources */,
+				D49561121D64A8F000CAF94D /* NSObject+MUTask.m in Sources */,
 				D47917771BE3A641003B4C4C /* Foundation+Log.m in Sources */,
 				D4B47C701C0ACF08007B8575 /* MUBottomPopCityPickerView.m in Sources */,
 				D4B47C711C0ACF08007B8575 /* MUBottomPopDatePickerView.m in Sources */,
