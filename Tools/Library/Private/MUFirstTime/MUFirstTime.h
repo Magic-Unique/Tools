@@ -16,4 +16,6 @@
 
 + (void)clearFirstTimeRecordForIdentifier:(NSString *)identifier;
 
++ (NSString *)currentVersion;
+
 @end

@@ -11,6 +11,20 @@
 		3B3138E91BF1DBF20059A0DE /* Toast.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3B3138E71BF1DBF20059A0DE /* Toast.bundle */; };
 		3B3138F11BF1DCAA0059A0DE /* NSObject+Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B3138ED1BF1DCAA0059A0DE /* NSObject+Runtime.m */; };
 		3B3138F21BF1DCAA0059A0DE /* NSProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B3138EF1BF1DCAA0059A0DE /* NSProperty.m */; };
+		6D52A6341E2E00A000ADD32A /* NSMutableDictionary+MUBaseParame.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D52A6331E2E00A000ADD32A /* NSMutableDictionary+MUBaseParame.m */; };
+		6D52A6381E2E00DF00ADD32A /* UIApplication+MUExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D52A6371E2E00DF00ADD32A /* UIApplication+MUExtension.m */; };
+		6D52A63C1E2E00F500ADD32A /* UIDevice+MUExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D52A63B1E2E00F500ADD32A /* UIDevice+MUExtension.m */; };
+		6D52A6401E2E010900ADD32A /* UITabBarItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D52A63F1E2E010900ADD32A /* UITabBarItem+Extension.m */; };
+		6D52A6441E2E013B00ADD32A /* DirectoryWatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D52A6431E2E013B00ADD32A /* DirectoryWatcher.m */; };
+		6D52A64E1E2E016B00ADD32A /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D52A6491E2E016B00ADD32A /* MBProgressHUD+MJ.m */; };
+		6D52A64F1E2E016B00ADD32A /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6D52A64A1E2E016B00ADD32A /* MBProgressHUD.bundle */; };
+		6D52A6541E2E01B000ADD32A /* MUKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D52A6531E2E01B000ADD32A /* MUKeychain.m */; };
+		6D52A65A1E2E01C000ADD32A /* UIView+MUMaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D52A6571E2E01C000ADD32A /* UIView+MUMaskView.m */; };
+		6D52A65B1E2E01C000ADD32A /* UIViewController+MUMaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D52A6591E2E01C000ADD32A /* UIViewController+MUMaskView.m */; };
+		6D52A65F1E2E01CE00ADD32A /* MUTagsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D52A65E1E2E01CE00ADD32A /* MUTagsView.m */; };
+		6D52A6631E2E022600ADD32A /* RTStoreManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D52A6621E2E022600ADD32A /* RTStoreManager.m */; };
+		6D52A6691E2E025C00ADD32A /* RTHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D52A6661E2E025C00ADD32A /* RTHUD.m */; };
+		6D52A66A1E2E025C00ADD32A /* RTHUDContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D52A6681E2E025C00ADD32A /* RTHUDContentView.m */; };
 		A79953114289E6202751FC07 /* libPods-Tools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B29DA2A35C97111F3D92B181 /* libPods-Tools.a */; };
 		D41534AF1C0D81000086FA21 /* MUBottomPopPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = D41534AE1C0D81000086FA21 /* MUBottomPopPickerView.m */; };
 		D41534B11C0D8C360086FA21 /* UINavigationBar.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D41534B01C0D8C360086FA21 /* UINavigationBar.bundle */; };
@@ -106,6 +120,33 @@
 		3B3138EE1BF1DCAA0059A0DE /* NSProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSProperty.h; sourceTree = "<group>"; };
 		3B3138EF1BF1DCAA0059A0DE /* NSProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSProperty.m; sourceTree = "<group>"; };
 		3B3138F01BF1DCAA0059A0DE /* Runtime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Runtime.h; sourceTree = "<group>"; };
+		6D52A6321E2E00A000ADD32A /* NSMutableDictionary+MUBaseParame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+MUBaseParame.h"; sourceTree = "<group>"; };
+		6D52A6331E2E00A000ADD32A /* NSMutableDictionary+MUBaseParame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+MUBaseParame.m"; sourceTree = "<group>"; };
+		6D52A6361E2E00DF00ADD32A /* UIApplication+MUExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+MUExtension.h"; sourceTree = "<group>"; };
+		6D52A6371E2E00DF00ADD32A /* UIApplication+MUExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+MUExtension.m"; sourceTree = "<group>"; };
+		6D52A63A1E2E00F500ADD32A /* UIDevice+MUExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+MUExtension.h"; sourceTree = "<group>"; };
+		6D52A63B1E2E00F500ADD32A /* UIDevice+MUExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+MUExtension.m"; sourceTree = "<group>"; };
+		6D52A63E1E2E010900ADD32A /* UITabBarItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarItem+Extension.h"; sourceTree = "<group>"; };
+		6D52A63F1E2E010900ADD32A /* UITabBarItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarItem+Extension.m"; sourceTree = "<group>"; };
+		6D52A6421E2E013B00ADD32A /* DirectoryWatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectoryWatcher.h; sourceTree = "<group>"; };
+		6D52A6431E2E013B00ADD32A /* DirectoryWatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DirectoryWatcher.m; sourceTree = "<group>"; };
+		6D52A6481E2E016B00ADD32A /* MBProgressHUD+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+MJ.h"; sourceTree = "<group>"; };
+		6D52A6491E2E016B00ADD32A /* MBProgressHUD+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MJ.m"; sourceTree = "<group>"; };
+		6D52A64A1E2E016B00ADD32A /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		6D52A6521E2E01B000ADD32A /* MUKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUKeychain.h; sourceTree = "<group>"; };
+		6D52A6531E2E01B000ADD32A /* MUKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUKeychain.m; sourceTree = "<group>"; };
+		6D52A6561E2E01C000ADD32A /* UIView+MUMaskView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MUMaskView.h"; sourceTree = "<group>"; };
+		6D52A6571E2E01C000ADD32A /* UIView+MUMaskView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MUMaskView.m"; sourceTree = "<group>"; };
+		6D52A6581E2E01C000ADD32A /* UIViewController+MUMaskView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MUMaskView.h"; sourceTree = "<group>"; };
+		6D52A6591E2E01C000ADD32A /* UIViewController+MUMaskView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MUMaskView.m"; sourceTree = "<group>"; };
+		6D52A65D1E2E01CE00ADD32A /* MUTagsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUTagsView.h; sourceTree = "<group>"; };
+		6D52A65E1E2E01CE00ADD32A /* MUTagsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUTagsView.m; sourceTree = "<group>"; };
+		6D52A6611E2E022600ADD32A /* RTStoreManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTStoreManager.h; sourceTree = "<group>"; };
+		6D52A6621E2E022600ADD32A /* RTStoreManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTStoreManager.m; sourceTree = "<group>"; };
+		6D52A6651E2E025C00ADD32A /* RTHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTHUD.h; sourceTree = "<group>"; };
+		6D52A6661E2E025C00ADD32A /* RTHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTHUD.m; sourceTree = "<group>"; };
+		6D52A6671E2E025C00ADD32A /* RTHUDContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTHUDContentView.h; sourceTree = "<group>"; };
+		6D52A6681E2E025C00ADD32A /* RTHUDContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTHUDContentView.m; sourceTree = "<group>"; };
 		8DA532B1EC075493BFD4F0C2 /* Pods-Tools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tools.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tools/Pods-Tools.release.xcconfig"; sourceTree = "<group>"; };
 		B29DA2A35C97111F3D92B181 /* libPods-Tools.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tools.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D41534AD1C0D81000086FA21 /* MUBottomPopPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUBottomPopPickerView.h; sourceTree = "<group>"; };
@@ -301,6 +342,110 @@
 			path = Runtime;
 			sourceTree = "<group>";
 		};
+		6D52A6311E2E00A000ADD32A /* NSDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				6D52A6321E2E00A000ADD32A /* NSMutableDictionary+MUBaseParame.h */,
+				6D52A6331E2E00A000ADD32A /* NSMutableDictionary+MUBaseParame.m */,
+			);
+			path = NSDictionary;
+			sourceTree = "<group>";
+		};
+		6D52A6351E2E00DF00ADD32A /* UIApplication */ = {
+			isa = PBXGroup;
+			children = (
+				6D52A6361E2E00DF00ADD32A /* UIApplication+MUExtension.h */,
+				6D52A6371E2E00DF00ADD32A /* UIApplication+MUExtension.m */,
+			);
+			path = UIApplication;
+			sourceTree = "<group>";
+		};
+		6D52A6391E2E00F500ADD32A /* UIDevice */ = {
+			isa = PBXGroup;
+			children = (
+				6D52A63A1E2E00F500ADD32A /* UIDevice+MUExtension.h */,
+				6D52A63B1E2E00F500ADD32A /* UIDevice+MUExtension.m */,
+			);
+			path = UIDevice;
+			sourceTree = "<group>";
+		};
+		6D52A63D1E2E010900ADD32A /* UITabBarItem */ = {
+			isa = PBXGroup;
+			children = (
+				6D52A63E1E2E010900ADD32A /* UITabBarItem+Extension.h */,
+				6D52A63F1E2E010900ADD32A /* UITabBarItem+Extension.m */,
+			);
+			path = UITabBarItem;
+			sourceTree = "<group>";
+		};
+		6D52A6411E2E013B00ADD32A /* DirectoryWatcher */ = {
+			isa = PBXGroup;
+			children = (
+				6D52A6421E2E013B00ADD32A /* DirectoryWatcher.h */,
+				6D52A6431E2E013B00ADD32A /* DirectoryWatcher.m */,
+			);
+			path = DirectoryWatcher;
+			sourceTree = "<group>";
+		};
+		6D52A6451E2E016B00ADD32A /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				6D52A6481E2E016B00ADD32A /* MBProgressHUD+MJ.h */,
+				6D52A6491E2E016B00ADD32A /* MBProgressHUD+MJ.m */,
+				6D52A64A1E2E016B00ADD32A /* MBProgressHUD.bundle */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		6D52A6511E2E01B000ADD32A /* MUKeychain */ = {
+			isa = PBXGroup;
+			children = (
+				6D52A6521E2E01B000ADD32A /* MUKeychain.h */,
+				6D52A6531E2E01B000ADD32A /* MUKeychain.m */,
+			);
+			path = MUKeychain;
+			sourceTree = "<group>";
+		};
+		6D52A6551E2E01C000ADD32A /* MUMaskView */ = {
+			isa = PBXGroup;
+			children = (
+				6D52A6561E2E01C000ADD32A /* UIView+MUMaskView.h */,
+				6D52A6571E2E01C000ADD32A /* UIView+MUMaskView.m */,
+				6D52A6581E2E01C000ADD32A /* UIViewController+MUMaskView.h */,
+				6D52A6591E2E01C000ADD32A /* UIViewController+MUMaskView.m */,
+			);
+			path = MUMaskView;
+			sourceTree = "<group>";
+		};
+		6D52A65C1E2E01CE00ADD32A /* MUTagsView */ = {
+			isa = PBXGroup;
+			children = (
+				6D52A65D1E2E01CE00ADD32A /* MUTagsView.h */,
+				6D52A65E1E2E01CE00ADD32A /* MUTagsView.m */,
+			);
+			path = MUTagsView;
+			sourceTree = "<group>";
+		};
+		6D52A6601E2E022600ADD32A /* StoreKit */ = {
+			isa = PBXGroup;
+			children = (
+				6D52A6611E2E022600ADD32A /* RTStoreManager.h */,
+				6D52A6621E2E022600ADD32A /* RTStoreManager.m */,
+			);
+			path = StoreKit;
+			sourceTree = "<group>";
+		};
+		6D52A6641E2E025C00ADD32A /* HUD */ = {
+			isa = PBXGroup;
+			children = (
+				6D52A6651E2E025C00ADD32A /* RTHUD.h */,
+				6D52A6661E2E025C00ADD32A /* RTHUD.m */,
+				6D52A6671E2E025C00ADD32A /* RTHUDContentView.h */,
+				6D52A6681E2E025C00ADD32A /* RTHUDContentView.m */,
+			);
+			path = HUD;
+			sourceTree = "<group>";
+		};
 		9CE5838C76D8D95FA5934320 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -424,20 +569,27 @@
 		D47916531BE3A640003B4C4C /* Private */ = {
 			isa = PBXGroup;
 			children = (
+				6D52A6411E2E013B00ADD32A /* DirectoryWatcher */,
 				3B3138EA1BF1DCAA0059A0DE /* Runtime */,
 				D47916541BE3A640003B4C4C /* Foundation */,
 				D4EA4BF71BFF4B7B00B68851 /* IPAddress */,
+				6D52A6641E2E025C00ADD32A /* HUD */,
+				6D52A6451E2E016B00ADD32A /* MBProgressHUD */,
 				D479165D1BE3A640003B4C4C /* Model */,
 				D479166A1BE3A640003B4C4C /* MUAudioPlayer */,
 				D4B47C671C0ACF08007B8575 /* MUBottomPopView */,
 				D4C19AA11C0F21EC004B75C0 /* MUCirculateRoll */,
 				D495610B1D64A8F000CAF94D /* MUDeallocTask */,
 				D4B290EE1C3BFEA3003AFE40 /* MUFirstTime */,
+				6D52A6511E2E01B000ADD32A /* MUKeychain */,
+				6D52A6551E2E01C000ADD32A /* MUMaskView */,
 				D4B290A31C3BF6EF003AFE40 /* MUGuideView */,
 				D457BE081C2903D10097035A /* MUPageChooser */,
+				6D52A65C1E2E01CE00ADD32A /* MUTagsView */,
 				3B3138E31BF1DBF20059A0DE /* MUToast */,
 				D479166D1BE3A640003B4C4C /* Project */,
 				D480BC911CBF6CC300D93DFD /* Socket */,
+				6D52A6601E2E022600ADD32A /* StoreKit */,
 				D47916921BE3A640003B4C4C /* UIKit */,
 			);
 			path = Private;
@@ -448,6 +600,7 @@
 			children = (
 				D4A26C6B1BF8A18C00011494 /* NSData */,
 				D47B40671C11901400707258 /* NSDate */,
+				6D52A6311E2E00A000ADD32A /* NSDictionary */,
 				D4B028B11BE8E71A004BD032 /* NSObject */,
 				D47916581BE3A640003B4C4C /* NSLog */,
 				D479165A1BE3A640003B4C4C /* NSString */,
@@ -530,14 +683,17 @@
 		D47916921BE3A640003B4C4C /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				6D52A6351E2E00DF00ADD32A /* UIApplication */,
 				D47916931BE3A640003B4C4C /* UIBarButtonItem */,
 				D47916961BE3A640003B4C4C /* UIButton */,
 				D47916991BE3A640003B4C4C /* UIColor */,
+				6D52A6391E2E00F500ADD32A /* UIDevice */,
 				D479169C1BE3A640003B4C4C /* UIImage */,
 				D470ADB91C902E730047D3F1 /* UIImageView */,
 				D479169F1BE3A640003B4C4C /* UIKit+Extension.h */,
 				D470ADA41C902CDD0047D3F1 /* UILabel */,
 				D47916A01BE3A640003B4C4C /* UINavigationBar */,
+				6D52A63D1E2E010900ADD32A /* UITabBarItem */,
 				D470ADA81C902D030047D3F1 /* UITableView */,
 				D47916A31BE3A640003B4C4C /* UIView */,
 				D470ADB21C902D420047D3F1 /* UIViewController */,
@@ -916,7 +1072,7 @@
 		D47916301BE3A616003B4C4C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = Unique;
 				TargetAttributes = {
 					D47916371BE3A616003B4C4C = {
@@ -952,6 +1108,7 @@
 				D4A3AC211CA3863700F84E08 /* header.JPG in Resources */,
 				D479164B1BE3A616003B4C4C /* LaunchScreen.storyboard in Resources */,
 				D47916481BE3A616003B4C4C /* Assets.xcassets in Resources */,
+				6D52A64F1E2E016B00ADD32A /* MBProgressHUD.bundle in Resources */,
 				3B3138E91BF1DBF20059A0DE /* Toast.bundle in Resources */,
 				D4C0C4441C20307C00839875 /* DateDescription.strings in Resources */,
 				D4B47C661C0ACEF8007B8575 /* China.plist in Resources */,
@@ -1023,10 +1180,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B3138F11BF1DCAA0059A0DE /* NSObject+Runtime.m in Sources */,
+				6D52A65A1E2E01C000ADD32A /* UIView+MUMaskView.m in Sources */,
 				D479178E1BE3A641003B4C4C /* UINavigationBar+Extension.m in Sources */,
+				6D52A6381E2E00DF00ADD32A /* UIApplication+MUExtension.m in Sources */,
 				D4B290BC1C3BF6EF003AFE40 /* UIView+GuideView.m in Sources */,
 				D470ADC01C902E7C0047D3F1 /* UIImageView+Circle.m in Sources */,
 				D470ADBF1C902E7C0047D3F1 /* MUCircleImageManager.m in Sources */,
+				6D52A6691E2E025C00ADD32A /* RTHUD.m in Sources */,
+				6D52A6541E2E01B000ADD32A /* MUKeychain.m in Sources */,
+				6D52A64E1E2E016B00ADD32A /* MBProgressHUD+MJ.m in Sources */,
 				D47917801BE3A641003B4C4C /* WelcomeViewController.m in Sources */,
 				D4EA4BFA1BFF4B7B00B68851 /* IPAddress.m in Sources */,
 				D4B28EA11C5DE65600259F89 /* MUBottomPopGroupPickerView.m in Sources */,
@@ -1038,12 +1200,15 @@
 				D479178C1BE3A641003B4C4C /* UIColor+Extension.m in Sources */,
 				D47916431BE3A616003B4C4C /* ViewController.m in Sources */,
 				D41534AF1C0D81000086FA21 /* MUBottomPopPickerView.m in Sources */,
+				6D52A66A1E2E025C00ADD32A /* RTHUDContentView.m in Sources */,
 				D4B290C51C3BF6EF003AFE40 /* MUGuideContentView.m in Sources */,
 				D4C19AA71C0F21EC004B75C0 /* MUCirculateRollView.m in Sources */,
 				D4B290BD1C3BF6EF003AFE40 /* UIView+Snapshot.m in Sources */,
 				D4A26C6E1BF8A1B300011494 /* NSData+Unique.m in Sources */,
+				6D52A6441E2E013B00ADD32A /* DirectoryWatcher.m in Sources */,
 				D4B290C61C3BF6EF003AFE40 /* MUGuideTargetView.m in Sources */,
 				D479177D1BE3A641003B4C4C /* NSObject+Model.m in Sources */,
+				6D52A63C1E2E00F500ADD32A /* UIDevice+MUExtension.m in Sources */,
 				D4B290BF1C3BF6EF003AFE40 /* MUGuideView.m in Sources */,
 				D480BCB41CBF6CC300D93DFD /* NSError+Socket.m in Sources */,
 				D47B406A1C11901400707258 /* NSDate+Extension.m in Sources */,
@@ -1054,6 +1219,7 @@
 				D470ADAD1C902D030047D3F1 /* UITableView+SeparatorColor.m in Sources */,
 				D470ADB11C902D1E0047D3F1 /* UIView+Snapshot.m in Sources */,
 				D479178F1BE3A641003B4C4C /* UIView+Extension.m in Sources */,
+				6D52A65B1E2E01C000ADD32A /* UIViewController+MUMaskView.m in Sources */,
 				D49561121D64A8F000CAF94D /* NSObject+MUTask.m in Sources */,
 				D47917771BE3A641003B4C4C /* Foundation+Log.m in Sources */,
 				D4B47C701C0ACF08007B8575 /* MUBottomPopCityPickerView.m in Sources */,
@@ -1064,6 +1230,8 @@
 				D48DBD931C06D5FE00D7364E /* NSString+Emoji.m in Sources */,
 				D470ADA71C902CE50047D3F1 /* UILabel+SizeToFit.m in Sources */,
 				D470ADA01C902C770047D3F1 /* NSString+Size.m in Sources */,
+				6D52A6401E2E010900ADD32A /* UITabBarItem+Extension.m in Sources */,
+				6D52A65F1E2E01CE00ADD32A /* MUTagsView.m in Sources */,
 				D48DBD8F1C06D5F300D7364E /* NSString+HRLegal.m in Sources */,
 				D4B47C721C0ACF08007B8575 /* MUBottomPopView.m in Sources */,
 				D479178A1BE3A641003B4C4C /* UIBarButtonItem+Extension.m in Sources */,
@@ -1079,10 +1247,12 @@
 				D48DBD8E1C06D5F300D7364E /* NSString+Hash.m in Sources */,
 				D4B290BE1C3BF6EF003AFE40 /* MUGuideItem.m in Sources */,
 				D457BE0B1C2903D10097035A /* MUPageChooser.m in Sources */,
+				6D52A6341E2E00A000ADD32A /* NSMutableDictionary+MUBaseParame.m in Sources */,
 				D479177B1BE3A641003B4C4C /* MUPropertySet.m in Sources */,
 				D470ADB71C902D420047D3F1 /* UIViewController+Additem.m in Sources */,
 				D479178D1BE3A641003B4C4C /* UIImage+Extension.m in Sources */,
 				D47916401BE3A616003B4C4C /* AppDelegate.m in Sources */,
+				6D52A6631E2E022600ADD32A /* RTStoreManager.m in Sources */,
 				3B3138F21BF1DCAA0059A0DE /* NSProperty.m in Sources */,
 				D480BCB91CBF6CC300D93DFD /* MUSyncTCPClient.m in Sources */,
 				D480BCB61CBF6CC300D93DFD /* yudpsocket.c in Sources */,
@@ -1130,6 +1300,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -1139,8 +1310,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -1173,6 +1346,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -1182,8 +1356,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";

@@ -9,7 +9,7 @@
 #import "MUFirstTime.h"
 
 #define MUUserDefaults	[NSUserDefaults standardUserDefaults]
-#define MUKeyPrefix		@"com.unique."
+#define MUKeyPrefix		@"com.unique.firsttime."
 #define MUBundleVersion	@"CFBundleShortVersionString"
 
 @implementation MUFirstTime
@@ -35,6 +35,10 @@
 	NSString *key = [self keyForIdentifier:identifier];
 	[MUUserDefaults removeObjectForKey:key];
 	[MUUserDefaults synchronize];
+}
+
++ (NSString *)currentVersion {
+	return [NSBundle.mainBundle objectForInfoDictionaryKey:MUBundleVersion];
 }
 
 #pragma mark - Private Method
