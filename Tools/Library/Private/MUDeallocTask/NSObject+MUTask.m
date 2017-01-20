@@ -31,7 +31,8 @@
 }
 
 - (void)clearAllDeallocTask {
-    [self.deallocTaskTarget clearAllDeallocTask];
+    MUDeallocTaskTarget *deallocTaskTarget = objc_getAssociatedObject(self, "deallocTaskTarget");
+    [deallocTaskTarget clearAllDeallocTask];
 }
 
 @end

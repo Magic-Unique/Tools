@@ -14,6 +14,6 @@
 #import "MUSyncUDPSocket.h"
 
 #import "MUAsyncTCPServer.h"
-#import "MUAsyncUDPServer.h"
+#import "MUAsyncUDPSocket.h"
 
 #endif /* MUSocket_h */
