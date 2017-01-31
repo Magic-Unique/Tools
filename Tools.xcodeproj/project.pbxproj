@@ -108,6 +108,7 @@
 		D4C0C43F1C202FA000839875 /* NSDateFormatter+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C0C43E1C202FA000839875 /* NSDateFormatter+Category.m */; };
 		D4C0C4441C20307C00839875 /* DateDescription.strings in Resources */ = {isa = PBXBuildFile; fileRef = D4C0C4461C20307C00839875 /* DateDescription.strings */; };
 		D4C19AA71C0F21EC004B75C0 /* MUCirculateRollView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C19AA51C0F21EC004B75C0 /* MUCirculateRollView.m */; };
+		D4C584301D72CCD700619280 /* NSObject+Association.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C5842F1D72CCD700619280 /* NSObject+Association.m */; };
 		D4EA4BFA1BFF4B7B00B68851 /* IPAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = D4EA4BF91BFF4B7B00B68851 /* IPAddress.m */; };
 /* End PBXBuildFile section */
 
@@ -121,7 +122,7 @@
 		3B3138ED1BF1DCAA0059A0DE /* NSObject+Runtime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Runtime.m"; sourceTree = "<group>"; };
 		3B3138EE1BF1DCAA0059A0DE /* NSProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSProperty.h; sourceTree = "<group>"; };
 		3B3138EF1BF1DCAA0059A0DE /* NSProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSProperty.m; sourceTree = "<group>"; };
-		3B3138F01BF1DCAA0059A0DE /* Runtime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Runtime.h; sourceTree = "<group>"; };
+		3B3138F01BF1DCAA0059A0DE /* MURuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MURuntime.h; sourceTree = "<group>"; };
 		6D3458251E320B4A00CA9621 /* MUCodeSignCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUCodeSignCheck.h; sourceTree = "<group>"; };
 		6D3458261E320B4A00CA9621 /* MUCodeSignCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUCodeSignCheck.m; sourceTree = "<group>"; };
 		6D3458271E320B4A00CA9621 /* MUEntitlements.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUEntitlements.h; sourceTree = "<group>"; };
@@ -307,6 +308,8 @@
 		D4C0C4471C20307E00839875 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/DateDescription.strings; sourceTree = "<group>"; };
 		D4C19AA41C0F21EC004B75C0 /* MUCirculateRollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUCirculateRollView.h; sourceTree = "<group>"; };
 		D4C19AA51C0F21EC004B75C0 /* MUCirculateRollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUCirculateRollView.m; sourceTree = "<group>"; };
+		D4C5842E1D72CCD700619280 /* NSObject+Association.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Association.h"; sourceTree = "<group>"; };
+		D4C5842F1D72CCD700619280 /* NSObject+Association.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Association.m"; sourceTree = "<group>"; };
 		D4EA4BF81BFF4B7B00B68851 /* IPAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPAddress.h; sourceTree = "<group>"; };
 		D4EA4BF91BFF4B7B00B68851 /* IPAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPAddress.m; sourceTree = "<group>"; };
 		FB3DDECC61883873CDC5D70E /* Pods-Tools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tools.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tools/Pods-Tools.debug.xcconfig"; sourceTree = "<group>"; };
@@ -341,9 +344,11 @@
 				3B3138EB1BF1DCAA0059A0DE /* Config.h */,
 				3B3138EC1BF1DCAA0059A0DE /* NSObject+Runtime.h */,
 				3B3138ED1BF1DCAA0059A0DE /* NSObject+Runtime.m */,
+				D4C5842E1D72CCD700619280 /* NSObject+Association.h */,
+				D4C5842F1D72CCD700619280 /* NSObject+Association.m */,
 				3B3138EE1BF1DCAA0059A0DE /* NSProperty.h */,
 				3B3138EF1BF1DCAA0059A0DE /* NSProperty.m */,
-				3B3138F01BF1DCAA0059A0DE /* Runtime.h */,
+				3B3138F01BF1DCAA0059A0DE /* MURuntime.h */,
 			);
 			path = Runtime;
 			sourceTree = "<group>";
@@ -1210,6 +1215,7 @@
 				6D52A6691E2E025C00ADD32A /* RTHUD.m in Sources */,
 				6D52A6541E2E01B000ADD32A /* MUKeychain.m in Sources */,
 				6D52A64E1E2E016B00ADD32A /* MBProgressHUD+MJ.m in Sources */,
+				D4C584301D72CCD700619280 /* NSObject+Association.m in Sources */,
 				D47917801BE3A641003B4C4C /* WelcomeViewController.m in Sources */,
 				D4EA4BFA1BFF4B7B00B68851 /* IPAddress.m in Sources */,
 				D4B28EA11C5DE65600259F89 /* MUBottomPopGroupPickerView.m in Sources */,

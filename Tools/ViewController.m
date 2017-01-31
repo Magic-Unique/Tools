@@ -7,15 +7,11 @@
 //
 
 #import "ViewController.h"
-#import "MUSocket.h"
 
 @interface ViewController ()
-
-@property (nonatomic, strong) MUAsyncTCPClient *client;
 
 @end
 
 @implementation ViewController
-
 
 @end
