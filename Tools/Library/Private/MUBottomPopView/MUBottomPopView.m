@@ -307,6 +307,7 @@ typedef void(^AnimatedCompleted)(BOOL finished);
 - (UIButton *)OKButton {
     if (!_OKButton) {
         UIButton *OKButton = [UIButton new];
+		OKButton.titleLabel.font = [UIFont systemFontOfSize:14];
         [OKButton addTarget:self action:@selector(OKButtonClick:) forControlEvents:UIControlEventTouchUpInside];
         [OKButton setTitle:button_title_ok forState:UIControlStateNormal];
         [OKButton setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
@@ -318,7 +319,8 @@ typedef void(^AnimatedCompleted)(BOOL finished);
 
 - (UIButton *)cancelButton {
     if (!_cancelButton) {
-        UIButton *cancelButton = [UIButton new];
+		UIButton *cancelButton = [UIButton new];
+		cancelButton.titleLabel.font = [UIFont systemFontOfSize:14];
         [cancelButton addTarget:self action:@selector(cancelButtonClick:) forControlEvents:UIControlEventTouchUpInside];
         [cancelButton setTitle:button_title_cancel forState:UIControlStateNormal];
         [cancelButton setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];

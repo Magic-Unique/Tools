@@ -171,7 +171,30 @@ NSString *const MUCityInfoRegionKey = @"region";
     return row;
 }
 
-- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
+- (CGFloat)pickerView:(UIPickerView *)pickerView rowHeightForComponent:(NSInteger)component {
+	return 30;
+}
+
+- (UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view {
+	UILabel *label = (UILabel *)view;
+	if (!label) {
+		label = [UILabel new];
+		label.font = [UIFont systemFontOfSize:13];
+		label.adjustsFontSizeToFitWidth = YES;
+		label.textAlignment = NSTextAlignmentCenter;
+	}
+	label.text = [self ic_pickerView:pickerView titleForRow:row forComponent:component];
+	return label;
+}
+
+//- (NSAttributedString *)pickerView:(UIPickerView *)pickerView attributedTitleForRow:(NSInteger)row forComponent:(NSInteger)component {
+//	NSString *title = [self ic_pickerView:pickerView titleForRow:row forComponent:component];
+//	NSAttributedString *attrStr = [[NSMutableAttributedString alloc] initWithString:title
+//																		 attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:10]}];
+//	return [attrStr copy];
+//}
+
+- (NSString *)ic_pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
     NSString *title = @"";
     
     switch (component) {

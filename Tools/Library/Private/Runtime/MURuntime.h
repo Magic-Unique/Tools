@@ -14,4 +14,6 @@
 #import "NSObject+Runtime.h"
 #import "NSProperty.h"
 
+#import "NSObject+Association.h"
+
 #endif /* Runtime_h */
