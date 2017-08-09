@@ -5,7 +5,7 @@
 //
 
 
-#import "NSString+hash.h"
+#import "NSString+Hash.h"
 
 #import <CommonCrypto/CommonDigest.h>
 #import <CommonCrypto/CommonHMAC.h>

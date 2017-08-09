@@ -45,6 +45,10 @@
     }
 }
 
+- (NSArray<NSString *> *)allDeallocTaskKeys {
+	return self.taskBuffer.allKeys;
+}
+
 - (void)clearAllDeallocTask {
     _taskBuffer = nil;
 }

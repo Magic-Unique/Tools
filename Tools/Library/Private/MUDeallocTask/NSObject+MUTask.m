@@ -21,6 +21,10 @@
     return target;
 }
 
+- (NSArray<NSString *> *)allDeallocTaskKeys {
+	return [self.deallocTaskTarget allDeallocTaskKeys];
+}
+
 - (void)addDeallocTask:(void (^)(id, NSString *))task forKey:(NSString *)key {
     [self.deallocTaskTarget addDeallocTask:task forKey:key];
 }

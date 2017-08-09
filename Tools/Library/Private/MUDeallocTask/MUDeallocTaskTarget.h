@@ -17,6 +17,8 @@
 
 - (void)removeDeallocTaskForKey:(NSString *)key;
 
+- (NSArray<NSString *> *)allDeallocTaskKeys;
+
 - (void)clearAllDeallocTask;
 
 @end
