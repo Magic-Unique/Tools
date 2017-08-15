@@ -114,6 +114,7 @@
 		D4C584301D72CCD700619280 /* NSObject+Association.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C5842F1D72CCD700619280 /* NSObject+Association.m */; };
 		D4D141221F39FBD100E477C2 /* MUPath+Path.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D141211F39FBD100E477C2 /* MUPath+Path.m */; };
 		D4EA4BFA1BFF4B7B00B68851 /* IPAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = D4EA4BF91BFF4B7B00B68851 /* IPAddress.m */; };
+		D4F652981F433A6E00442A43 /* MUVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F652971F433A6E00442A43 /* MUVersion.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -324,6 +325,8 @@
 		D4D141211F39FBD100E477C2 /* MUPath+Path.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MUPath+Path.m"; sourceTree = "<group>"; };
 		D4EA4BF81BFF4B7B00B68851 /* IPAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPAddress.h; sourceTree = "<group>"; };
 		D4EA4BF91BFF4B7B00B68851 /* IPAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPAddress.m; sourceTree = "<group>"; };
+		D4F652961F433A6E00442A43 /* MUVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUVersion.h; sourceTree = "<group>"; };
+		D4F652971F433A6E00442A43 /* MUVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MUVersion.m; sourceTree = "<group>"; };
 		FB3DDECC61883873CDC5D70E /* Pods-Tools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tools.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tools/Pods-Tools.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -637,6 +640,7 @@
 				D4B290A31C3BF6EF003AFE40 /* MUGuideView */,
 				D457BE081C2903D10097035A /* MUPageChooser */,
 				D41393E61F39ED60003DBFB5 /* MUPath */,
+				D4F652951F433A6E00442A43 /* MUVersion */,
 				6D52A65C1E2E01CE00ADD32A /* MUTagsView */,
 				3B3138E31BF1DBF20059A0DE /* MUToast */,
 				D479166D1BE3A640003B4C4C /* Project */,
@@ -1087,6 +1091,15 @@
 			path = IPAddress;
 			sourceTree = "<group>";
 		};
+		D4F652951F433A6E00442A43 /* MUVersion */ = {
+			isa = PBXGroup;
+			children = (
+				D4F652961F433A6E00442A43 /* MUVersion.h */,
+				D4F652971F433A6E00442A43 /* MUVersion.m */,
+			);
+			path = MUVersion;
+			sourceTree = "<group>";
+		};
 		FCD55707D82EDECB68153A39 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1308,6 +1321,7 @@
 				D48DBD8E1C06D5F300D7364E /* NSString+Hash.m in Sources */,
 				D4B290BE1C3BF6EF003AFE40 /* MUGuideItem.m in Sources */,
 				D457BE0B1C2903D10097035A /* MUPageChooser.m in Sources */,
+				D4F652981F433A6E00442A43 /* MUVersion.m in Sources */,
 				6D52A6341E2E00A000ADD32A /* NSMutableDictionary+MUBaseParame.m in Sources */,
 				D479177B1BE3A641003B4C4C /* MUPropertySet.m in Sources */,
 				D470ADB71C902D420047D3F1 /* UIViewController+Additem.m in Sources */,
