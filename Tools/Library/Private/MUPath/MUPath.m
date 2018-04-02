@@ -57,7 +57,7 @@
 	}
 }
 
-- (NSString *)absolutePath {
+- (NSString *)string {
 	NSString *string = [self.pathComponents componentsJoinedByString:@"/"];
 	if ([string hasPrefix:@"/"]) {
 		return string;

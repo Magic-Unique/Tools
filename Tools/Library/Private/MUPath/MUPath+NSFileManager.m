@@ -12,46 +12,46 @@
 
 @implementation MUPath (NSFileManager)
 
-- (MUPathStatus)status {
+- (MUPathType)type {
 	BOOL isDirectory = NO;
-	if ([FileManager fileExistsAtPath:self.absolutePath isDirectory:&isDirectory]) {
-		return isDirectory ? MUPathStatusDirectory : MUPathStatusFile;
+	if ([FileManager fileExistsAtPath:self.string isDirectory:&isDirectory]) {
+		return isDirectory ? MUPathTypeDirectory : MUPathTypeFile;
 	} else {
-		return MUPathStatusNone;
+		return MUPathTypeNone;
 	}
 }
 
 - (BOOL)isExist {
-	return self.status != MUPathStatusNone;
+	return self.type != MUPathTypeNone;
 }
 
 - (BOOL)isDirectory {
-	return self.status == MUPathStatusDirectory;
+	return self.type == MUPathTypeDirectory;
 }
 
 - (BOOL)isFile {
-	return self.status == MUPathStatusFile;
+	return self.type == MUPathTypeFile;
 }
 
 - (BOOL)isReadable {
-	return [FileManager isReadableFileAtPath:self.absolutePath];
+	return [FileManager isReadableFileAtPath:self.string];
 }
 
 - (BOOL)isWritable {
-	return [FileManager isWritableFileAtPath:self.absolutePath];
+	return [FileManager isWritableFileAtPath:self.string];
 }
 
 - (BOOL)isExecutable {
-	return [FileManager isExecutableFileAtPath:self.absolutePath];
+	return [FileManager isExecutableFileAtPath:self.string];
 }
 
 - (BOOL)isDeletable {
-	return [FileManager isDeletableFileAtPath:self.absolutePath];
+	return [FileManager isDeletableFileAtPath:self.string];
 }
 
 - (NSArray<MUPath *> *)subpaths {
 	if (self.isDirectory) {
-		NSArray *subpathComponent = [FileManager contentsOfDirectoryAtPath:self.absolutePath error:nil];
+		NSArray *subpathComponent = [FileManager contentsOfDirectoryAtPath:self.string error:nil];
 		NSMutableArray<MUPath *> *subpaths = [NSMutableArray arrayWithCapacity:subpathComponent.count];
 		for (NSString *subpath in subpathComponent) {
 			[subpaths addObject:[self subpathWithComponent:subpath]];
@@ -64,7 +64,7 @@
 
 - (NSArray<MUPath *> *)subpathsWithPattern:(NSString *)pattern {
 	if (self.isDirectory) {
-		NSArray *subpathComponent = [FileManager contentsOfDirectoryAtPath:self.absolutePath error:nil];
+		NSArray *subpathComponent = [FileManager contentsOfDirectoryAtPath:self.string error:nil];
 		NSMutableArray<MUPath *> *subpaths = [NSMutableArray arrayWithCapacity:subpathComponent.count];
 		NSRegularExpression *regular = [NSRegularExpression regularExpressionWithPattern:pattern options:1 error:nil];
 		if (regular) {
@@ -81,14 +81,14 @@
 
 - (NSDictionary *)attributes {
 	if (self.exist) {
-		return [FileManager attributesOfItemAtPath:self.absolutePath error:nil];
+		return [FileManager attributesOfItemAtPath:self.string error:nil];
 	} else {
 		return nil;
 	}
 }
 
 - (void)setAttributes:(NSDictionary *)attributes {
-	[FileManager setAttributes:attributes ofItemAtPath:self.absolutePath error:nil];
+	[FileManager setAttributes:attributes ofItemAtPath:self.string error:nil];
 }
 
 - (NSError *)createDirectoryWithCleanContents:(BOOL)cleanContents {
@@ -109,14 +109,14 @@
 			return error;
 		}
 	}
-	[FileManager createDirectoryAtPath:self.absolutePath withIntermediateDirectories:YES attributes:nil error:&error];
+	[FileManager createDirectoryAtPath:self.string withIntermediateDirectories:YES attributes:nil error:&error];
 	return error;
 }
 
 - (NSError *)remove {
 	NSError *error = nil;
 	if (self.isExist) {
-		[FileManager removeItemAtPath:self.absolutePath error:&error];
+		[FileManager removeItemAtPath:self.string error:&error];
 	}
 	return error;
 }
@@ -142,8 +142,13 @@
 			}
 		}
 	}
-	[FileManager copyItemAtPath:self.absolutePath toPath:destinationPath.absolutePath error:&error];
+	[FileManager copyItemAtPath:self.string toPath:destinationPath.string error:&error];
 	return error;
+}
+
+- (NSError *)copyInTo:(MUPath *)distinationDirectoryPath autoCover:(BOOL)autoCover {
+    return [self copyTo:[distinationDirectoryPath subpathWithComponent:self.lastPathComponent]
+              autoCover:autoCover];
 }
 
 - (NSError *)moveTo:(MUPath *)destinationPath autoCover:(BOOL)autoCover {
@@ -156,8 +161,13 @@
 			}
 		}
 	}
-	[FileManager moveItemAtPath:self.absolutePath toPath:destinationPath.absolutePath error:&error];
+	[FileManager moveItemAtPath:self.string toPath:destinationPath.string error:&error];
 	return error;
+}
+
+- (NSError *)moveInTo:(MUPath *)distinationDirectoryPath autoCover:(BOOL)autoCover {
+    return [self moveTo:[distinationDirectoryPath subpathWithComponent:self.lastPathComponent]
+              autoCover:autoCover];
 }
 
 @end

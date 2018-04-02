@@ -10,7 +10,7 @@
 
 @interface MUPath : NSObject
 
-@property (nonatomic, strong, readonly) NSString *absolutePath;
+@property (nonatomic, strong, readonly) NSString *string;
 
 @property (nonatomic, weak, readonly) MUPath *superpath;
 

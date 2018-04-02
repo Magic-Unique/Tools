@@ -8,15 +8,15 @@
 
 #import "MUPath.h"
 
-typedef NS_ENUM(NSUInteger, MUPathStatus) {
-	MUPathStatusNone,
-	MUPathStatusFile,
-	MUPathStatusDirectory,
+typedef NS_ENUM(NSUInteger, MUPathType) {
+	MUPathTypeNone,
+	MUPathTypeFile,
+	MUPathTypeDirectory,
 };
 
 @interface MUPath (NSFileManager)
 
-@property (nonatomic, assign, readonly) MUPathStatus status;
+@property (nonatomic, assign, readonly) MUPathType type;
 
 @property (nonatomic, assign, readonly, getter=isExist) BOOL exist;
 
@@ -45,7 +45,9 @@ typedef NS_ENUM(NSUInteger, MUPathStatus) {
 - (NSError *)removeSubpaths;
 
 - (NSError *)copyTo:(MUPath *)destinationPath autoCover:(BOOL)autoCover;
+- (NSError *)copyInTo:(MUPath *)distinationDirectoryPath autoCover:(BOOL)autoCover;
 
 - (NSError *)moveTo:(MUPath *)destinationPath autoCover:(BOOL)autoCover;
+- (NSError *)moveInTo:(MUPath *)distinationDirectoryPath autoCover:(BOOL)autoCover;
 
 @end
