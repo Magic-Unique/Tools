@@ -18,14 +18,9 @@
 	return [self.pathExtension.lowercaseString isEqualToString:pathExtension.lowercaseString];
 }
 
-- (BOOL)isLike:(NSString *)pattern {
-	NSRegularExpression *regular = [NSRegularExpression regularExpressionWithPattern:pattern options:1 error:nil];
-	NSString *lastPathComponent= self.lastPathComponent;
-	if ([regular matchesInString:lastPathComponent options:1 range:NSMakeRange(0, lastPathComponent.length)].count > 0) {
-		return YES;
-	} else {
-		return NO;
-	}
+- (BOOL)isMatching:(NSString *)pattern {
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", pattern];
+    return [predicate evaluateWithObject:self.lastPathComponent];
 }
 
 @end

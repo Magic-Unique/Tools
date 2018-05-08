@@ -14,6 +14,6 @@
 
 - (BOOL)isA:(NSString *)pathExtension;
 
-- (BOOL)isLike:(NSString *)pattern;
+- (BOOL)isMatching:(NSString *)pattern;
 
 @end

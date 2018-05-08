@@ -32,22 +32,27 @@ typedef NS_ENUM(NSUInteger, MUPathType) {
 
 @property (nonatomic, assign, readonly, getter=isDeletable) BOOL deletable;
 
-@property (nonatomic, strong, readonly) NSArray<MUPath *> *subpaths;
+@property (nonatomic, strong, readonly) NSArray<MUPath *> *contents;
+@property (nonatomic, strong, readonly) NSArray<MUPath *> *files;
+@property (nonatomic, strong, readonly) NSArray<MUPath *> *directories;
 
 @property (nonatomic, strong) NSDictionary *attributes;
 
-- (NSArray<MUPath *> *)subpathsWithPattern:(NSString *)pattern;
+- (NSUInteger)enumerateContentsUsingBlock:(void (^)(MUPath *content, BOOL *stop))block;
+- (NSArray<MUPath *> *)contentsWithFilter:(BOOL (^)(MUPath *content))filter;
+- (NSArray<MUPath *> *)contentsWithPattern:(NSString *)pattern;
 
 - (NSError *)createDirectoryWithCleanContents:(BOOL)contents;
 
 - (NSError *)remove;
-
-- (NSError *)removeSubpaths;
+- (NSError *)clean;
 
 - (NSError *)copyTo:(MUPath *)destinationPath autoCover:(BOOL)autoCover;
-- (NSError *)copyInTo:(MUPath *)distinationDirectoryPath autoCover:(BOOL)autoCover;
+- (NSError *)copyInto:(MUPath *)distinationDirectoryPath autoCover:(BOOL)autoCover;
+- (NSError *)copyContentsInto:(MUPath *)distinationDirectoryPath autoCover:(BOOL)autoCover;
 
 - (NSError *)moveTo:(MUPath *)destinationPath autoCover:(BOOL)autoCover;
-- (NSError *)moveInTo:(MUPath *)distinationDirectoryPath autoCover:(BOOL)autoCover;
+- (NSError *)moveInto:(MUPath *)distinationDirectoryPath autoCover:(BOOL)autoCover;
+- (NSError *)moveContentsInto:(MUPath *)distinationDirectoryPath autoCover:(BOOL)autoCover;
 
 @end

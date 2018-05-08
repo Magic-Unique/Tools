@@ -11,12 +11,16 @@
 @interface MUPath : NSObject
 
 @property (nonatomic, strong, readonly) NSString *string;
+@property (nonatomic, strong, readonly) NSURL *fileURL;
 
-@property (nonatomic, weak, readonly) MUPath *superpath;
+@property (nonatomic, strong, readonly) MUPath *superpath;
 
 @property (nonatomic, strong, readonly) NSString *pathExtension;
 @property (nonatomic, strong, readonly) NSArray<NSString *> *pathComponents;
 @property (nonatomic, strong, readonly) NSString *lastPathComponent;
+
+- (instancetype)init;
++ (instancetype)path;
 
 - (instancetype)initWithString:(NSString *)string;
 + (instancetype)pathWithString:(NSString *)string;

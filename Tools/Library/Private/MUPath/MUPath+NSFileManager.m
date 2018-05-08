@@ -7,6 +7,7 @@
 //
 
 #import "MUPath+NSFileManager.h"
+#import "MUPath+Path.h"
 
 #define FileManager [NSFileManager defaultManager]
 
@@ -49,34 +50,57 @@
 	return [FileManager isDeletableFileAtPath:self.string];
 }
 
-- (NSArray<MUPath *> *)subpaths {
-	if (self.isDirectory) {
-		NSArray *subpathComponent = [FileManager contentsOfDirectoryAtPath:self.string error:nil];
-		NSMutableArray<MUPath *> *subpaths = [NSMutableArray arrayWithCapacity:subpathComponent.count];
-		for (NSString *subpath in subpathComponent) {
-			[subpaths addObject:[self subpathWithComponent:subpath]];
-		}
-		return [subpaths copy];
-	} else {
-		return nil;
-	}
+- (NSUInteger)enumerateContentsUsingBlock:(void (^)(MUPath *content, BOOL *stop))block {
+    NSArray *components = nil;
+    if (self.isDirectory) {
+        components = [FileManager contentsOfDirectoryAtPath:self.string error:nil];
+        if (block) {
+            BOOL stop = NO;
+            for (NSString *item in components) {
+                MUPath *path = [self subpathWithComponent:item];
+                block(path, &stop);
+                if (stop) {
+                    break;
+                }
+            }
+        }
+    }
+    return components.count;
 }
 
-- (NSArray<MUPath *> *)subpathsWithPattern:(NSString *)pattern {
-	if (self.isDirectory) {
-		NSArray *subpathComponent = [FileManager contentsOfDirectoryAtPath:self.string error:nil];
-		NSMutableArray<MUPath *> *subpaths = [NSMutableArray arrayWithCapacity:subpathComponent.count];
-		NSRegularExpression *regular = [NSRegularExpression regularExpressionWithPattern:pattern options:1 error:nil];
-		if (regular) {
-			for (NSString *subpath in subpathComponent) {
-				if ([regular matchesInString:subpath options:1 range:NSMakeRange(0, subpath.length)].count) {
-					[subpaths addObject:[self subpathWithComponent:subpath]];
-				}
-			}
-			return [subpaths copy];
-		}
-	}
-	return nil;
+- (NSArray<MUPath *> *)contentsWithFilter:(BOOL (^)(MUPath *content))filter {
+    NSMutableArray *contents = nil;
+    if (self.isDirectory) {
+        contents = [NSMutableArray array];
+        [self enumerateContentsUsingBlock:^(MUPath *content, BOOL *stop) {
+            if (filter == nil || filter(content)) {
+                [contents addObject:content];
+            }
+        }];
+    }
+    return [contents copy];
+}
+
+- (NSArray<MUPath *> *)contents {
+    return [self contentsWithFilter:nil];
+}
+
+- (NSArray<MUPath *> *)files {
+    return [self contentsWithFilter:^BOOL(MUPath *content) {
+        return content.isFile;
+    }];
+}
+
+- (NSArray<MUPath *> *)directories {
+    return [self contentsWithFilter:^BOOL(MUPath *content) {
+        return content.isDirectory;
+    }];
+}
+
+- (NSArray<MUPath *> *)contentsWithPattern:(NSString *)pattern {
+    return [self contentsWithFilter:^BOOL(MUPath *content) {
+        return [content isMatching:pattern];
+    }];
 }
 
 - (NSDictionary *)attributes {
@@ -96,7 +120,7 @@
 	if (self.isExist) {
 		if (self.isDirectory) {
 			if (cleanContents) {
-				error = [self removeSubpaths];
+				error = [self clean];
 				if (error) {
 					return error;
 				}
@@ -121,14 +145,14 @@
 	return error;
 }
 
-- (NSError *)removeSubpaths {
+- (NSError *)clean {
 	__block NSError *error = nil;
-	[self.subpaths enumerateObjectsUsingBlock:^(MUPath * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-		error = [obj remove];
-		if (error) {
-			*stop = YES;
-		}
-	}];
+    [self enumerateContentsUsingBlock:^(MUPath *content, BOOL *stop) {
+        error = [content remove];
+        if (error) {
+            *stop = YES;
+        }
+    }];
 	return error;
 }
 
@@ -146,9 +170,21 @@
 	return error;
 }
 
-- (NSError *)copyInTo:(MUPath *)distinationDirectoryPath autoCover:(BOOL)autoCover {
+- (NSError *)copyInto:(MUPath *)distinationDirectoryPath autoCover:(BOOL)autoCover {
     return [self copyTo:[distinationDirectoryPath subpathWithComponent:self.lastPathComponent]
               autoCover:autoCover];
+}
+
+- (NSError *)copyContentsInto:(MUPath *)distinationDirectoryPath autoCover:(BOOL)autoCover {
+    __block NSError *error = nil;
+    if (self.isDirectory == NO) {
+        return error;
+    }
+    [self enumerateContentsUsingBlock:^(MUPath *content, BOOL *stop) {
+        error = [content copyInto:distinationDirectoryPath autoCover:autoCover];
+        *stop = error ? YES : NO;
+    }];
+    return error;
 }
 
 - (NSError *)moveTo:(MUPath *)destinationPath autoCover:(BOOL)autoCover {
@@ -165,9 +201,21 @@
 	return error;
 }
 
-- (NSError *)moveInTo:(MUPath *)distinationDirectoryPath autoCover:(BOOL)autoCover {
+- (NSError *)moveInto:(MUPath *)distinationDirectoryPath autoCover:(BOOL)autoCover {
     return [self moveTo:[distinationDirectoryPath subpathWithComponent:self.lastPathComponent]
               autoCover:autoCover];
+}
+
+- (NSError *)moveContentsInto:(MUPath *)distinationDirectoryPath autoCover:(BOOL)autoCover {
+    __block NSError *error = nil;
+    if (self.isDirectory == NO) {
+        return error;
+    }
+    [self enumerateContentsUsingBlock:^(MUPath *content, BOOL *stop) {
+        error = [content moveInto:distinationDirectoryPath autoCover:autoCover];
+        *stop = error ? YES : NO;
+    }];
+    return error;
 }
 
 @end
