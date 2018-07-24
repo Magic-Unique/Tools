@@ -28,6 +28,7 @@
 		6D52A6631E2E022600ADD32A /* RTStoreManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D52A6621E2E022600ADD32A /* RTStoreManager.m */; };
 		6D52A6691E2E025C00ADD32A /* RTHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D52A6661E2E025C00ADD32A /* RTHUD.m */; };
 		6D52A66A1E2E025C00ADD32A /* RTHUDContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D52A6681E2E025C00ADD32A /* RTHUDContentView.m */; };
+		7E6F1A8721070ED1002330B3 /* UIScrollView+ScrollIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E6F1A8621070ED1002330B3 /* UIScrollView+ScrollIndicator.m */; };
 		A79953114289E6202751FC07 /* libPods-Tools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B29DA2A35C97111F3D92B181 /* libPods-Tools.a */; };
 		D41393EB1F39EDB9003DBFB5 /* MUPath.m in Sources */ = {isa = PBXBuildFile; fileRef = D41393E81F39EDB9003DBFB5 /* MUPath.m */; };
 		D41393EC1F39EDB9003DBFB5 /* MUPath+Sandbox.m in Sources */ = {isa = PBXBuildFile; fileRef = D41393EA1F39EDB9003DBFB5 /* MUPath+Sandbox.m */; };
@@ -151,6 +152,8 @@
 		6D52A6661E2E025C00ADD32A /* RTHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTHUD.m; sourceTree = "<group>"; };
 		6D52A6671E2E025C00ADD32A /* RTHUDContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTHUDContentView.h; sourceTree = "<group>"; };
 		6D52A6681E2E025C00ADD32A /* RTHUDContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTHUDContentView.m; sourceTree = "<group>"; };
+		7E6F1A8521070ED1002330B3 /* UIScrollView+ScrollIndicator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+ScrollIndicator.h"; sourceTree = "<group>"; };
+		7E6F1A8621070ED1002330B3 /* UIScrollView+ScrollIndicator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+ScrollIndicator.m"; sourceTree = "<group>"; };
 		8DA532B1EC075493BFD4F0C2 /* Pods-Tools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tools.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tools/Pods-Tools.release.xcconfig"; sourceTree = "<group>"; };
 		B29DA2A35C97111F3D92B181 /* libPods-Tools.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tools.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D41393E71F39EDB9003DBFB5 /* MUPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MUPath.h; sourceTree = "<group>"; };
@@ -453,6 +456,15 @@
 			path = HUD;
 			sourceTree = "<group>";
 		};
+		7E6F1A8421070EAA002330B3 /* UIScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				7E6F1A8521070ED1002330B3 /* UIScrollView+ScrollIndicator.h */,
+				7E6F1A8621070ED1002330B3 /* UIScrollView+ScrollIndicator.m */,
+			);
+			path = UIScrollView;
+			sourceTree = "<group>";
+		};
 		9CE5838C76D8D95FA5934320 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -716,6 +728,7 @@
 				D479169F1BE3A640003B4C4C /* UIKit+Extension.h */,
 				D470ADA41C902CDD0047D3F1 /* UILabel */,
 				D47916A01BE3A640003B4C4C /* UINavigationBar */,
+				7E6F1A8421070EAA002330B3 /* UIScrollView */,
 				6D52A63D1E2E010900ADD32A /* UITabBarItem */,
 				D470ADA81C902D030047D3F1 /* UITableView */,
 				D47916A31BE3A640003B4C4C /* UIView */,
@@ -992,7 +1005,7 @@
 				TargetAttributes = {
 					D47916371BE3A616003B4C4C = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = RC8R4XEVKX;
+						DevelopmentTeam = PWT4GSV7T6;
 						ProvisioningStyle = Manual;
 					};
 				};
@@ -1117,6 +1130,7 @@
 				D48DBD901C06D5F300D7364E /* NSString+QRCode.m in Sources */,
 				D49561111D64A8F000CAF94D /* MUDeallocTaskTarget.m in Sources */,
 				D479178C1BE3A641003B4C4C /* UIColor+Extension.m in Sources */,
+				7E6F1A8721070ED1002330B3 /* UIScrollView+ScrollIndicator.m in Sources */,
 				D47916431BE3A616003B4C4C /* ViewController.m in Sources */,
 				D41534AF1C0D81000086FA21 /* MUBottomPopPickerView.m in Sources */,
 				6D52A66A1E2E025C00ADD32A /* RTHUDContentView.m in Sources */,
@@ -1294,13 +1308,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = RC8R4XEVKX;
+				DEVELOPMENT_TEAM = PWT4GSV7T6;
 				INFOPLIST_FILE = Tools/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.unique.Tools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "8a0c2fdc-a906-40d8-b0aa-956d2defdfc7";
-				PROVISIONING_PROFILE_SPECIFIER = ShuangWu_Development_Wildcard;
+				PROVISIONING_PROFILE = "f2ca3300-56ad-438d-8191-042e8ad9690b";
+				PROVISIONING_PROFILE_SPECIFIER = Development;
 			};
 			name = Debug;
 		};
