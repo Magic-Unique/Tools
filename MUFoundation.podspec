@@ -91,7 +91,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "MUFoundation"
+  # s.source_files  = "MUFoundation"
   # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
@@ -136,7 +136,15 @@ Pod::Spec.new do |s|
   # s.dependency "JSONKit", "~> 1.4"
 
   s.subspec 'MUPath' do |ss|
-    ss.source_files = 'MUPath'
+    ss.source_files = 'MUFoundation/MUPath'
+  end
+
+  s.subspec 'MUFirstTime' do |ss|
+    ss.source_files = 'MUFoundation/MUFirstTime'
+  end
+
+  s.subspec 'MUVersion' do |ss|
+    ss.source_files = 'MUFoundation/MUVersion'
   end
 
 end

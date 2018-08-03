@@ -2,7 +2,7 @@
 //  MUPath.m
 //  WeChat
 //
-//  Created by 吴双 on 2017/8/7.
+//  Created by Magic-Unique on 2017/8/7.
 //
 //
 

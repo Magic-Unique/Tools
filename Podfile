@@ -7,14 +7,7 @@ inhibit_all_warnings!
 
 target 'Tools' do
 
-pod 'AFNetworking'
-pod 'FastImageCache'
-pod 'Masonry'
-pod 'MBProgressHUD'
-pod 'MJExtension'
-pod 'MJRefresh'
-pod 'SDWebImage'
-pod 'SVProgressHUD'
+pod 'MUFoundation/MUPath', :path => '.'
 
 end
 
