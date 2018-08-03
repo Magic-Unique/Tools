@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "MUFoundation"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "Magic-Unique's foundation frameworks"
 
   # This description is used to generate tags and improve search results.
