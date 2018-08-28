@@ -86,7 +86,25 @@ static NSString *MUGetFullPathString(NSString *path) {
 }
 
 - (instancetype)subpathWithComponent:(NSString *)component {
-	return [self.class pathWithComponents:[self.pathComponents arrayByAddingObject:component]];
+    NSArray *components = [self.pathComponents arrayByAddingObjectsFromArray:[component componentsSeparatedByString:@"/"]];
+	return [self.class pathWithComponents:components];
+}
+
+- (instancetype)pathByReplacingPathExtension:(NSString *)pathExtension {
+    NSString *path = self.string;
+    path = path.stringByDeletingPathExtension;
+    path = [path stringByAppendingPathExtension:pathExtension];
+    return [self.class pathWithString:path];
+}
+
+- (instancetype)pathByReplacingLastPathComponent:(NSString *)lastPathComponent {
+    NSString *path = self.string;
+    if ([path isEqualToString:@"/"]) {
+        return nil;
+    }
+    path = path.stringByDeletingLastPathComponent;
+    path = [path stringByAppendingPathComponent:lastPathComponent];
+    return [self.class pathWithString:path];
 }
 
 - (MUPath *)superpath {
@@ -106,6 +124,28 @@ static NSString *MUGetFullPathString(NSString *path) {
 	} else {
 		return [@"/" stringByAppendingString:string];
 	}
+}
+
+- (NSString *)relativeStringToPath:(MUPath *)path {
+    NSMutableArray *selfComponents = [self.pathComponents mutableCopy];
+    NSMutableArray *pathComponents = [path.pathComponents mutableCopy];
+    while (selfComponents.count && pathComponents.count) {
+        NSString *selfComponent = selfComponents.firstObject;
+        NSString *pathComponent = pathComponents.firstObject;
+        if ([selfComponent isEqualToString:pathComponent]) {
+            [selfComponents removeObjectAtIndex:0];
+            [pathComponents removeObjectAtIndex:0];
+            continue;
+        } else {
+            break;
+        }
+    }
+    NSMutableArray *components = [NSMutableArray array];
+    for (NSUInteger i = 0; i < pathComponents.count; i++) {
+        [components addObject:@".."];
+    }
+    [components addObjectsFromArray:selfComponents];
+    return [components componentsJoinedByString:@"/"];
 }
 
 - (NSURL *)fileURL {

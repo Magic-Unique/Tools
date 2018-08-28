@@ -30,4 +30,9 @@
 
 - (instancetype)subpathWithComponent:(NSString *)component;
 
+- (instancetype)pathByReplacingPathExtension:(NSString *)pathExtension;
+- (instancetype)pathByReplacingLastPathComponent:(NSString *)lastPathComponent;
+
+- (NSString *)relativeStringToPath:(MUPath *)path;
+
 @end
