@@ -1,38 +1,16 @@
 //
 //  MUPath.h
-//  WeChat
+//  Pods
 //
-//  Created by Magic-Unique on 2017/8/7.
+//  Created by Magic-Unique on 2019/3/21.
 //
-//
 
-#import <Foundation/Foundation.h>
+#ifndef MUPath_h
+#define MUPath_h
 
-@interface MUPath : NSObject
+#import "MUPath+Main.h"
+#import "MUPath+Path.h"
+#import "MUPath+Sandbox.h"
+#import "MUPath+NSFileManager.h"
 
-@property (nonatomic, strong, readonly) NSString *string;
-@property (nonatomic, strong, readonly) NSURL *fileURL;
-
-@property (nonatomic, strong, readonly) MUPath *superpath;
-
-@property (nonatomic, strong, readonly) NSString *pathExtension;
-@property (nonatomic, strong, readonly) NSArray<NSString *> *pathComponents;
-@property (nonatomic, strong, readonly) NSString *lastPathComponent;
-
-- (instancetype)init;
-+ (instancetype)path;
-
-- (instancetype)initWithString:(NSString *)string;
-+ (instancetype)pathWithString:(NSString *)string;
-
-- (instancetype)initWithComponents:(NSArray<NSString *> *)components;
-+ (instancetype)pathWithComponents:(NSArray<NSString *> *)components;
-
-- (instancetype)subpathWithComponent:(NSString *)component;
-
-- (instancetype)pathByReplacingPathExtension:(NSString *)pathExtension;
-- (instancetype)pathByReplacingLastPathComponent:(NSString *)lastPathComponent;
-
-- (NSString *)relativeStringToPath:(MUPath *)path;
-
-@end
+#endif /* MUPath_h */

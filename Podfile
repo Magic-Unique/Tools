@@ -7,7 +7,7 @@ inhibit_all_warnings!
 
 target 'Tools' do
 
-pod 'MUFoundation/MUPath', :path => '.'
+pod 'MUFoundation', :path => '.'
 
 end
 

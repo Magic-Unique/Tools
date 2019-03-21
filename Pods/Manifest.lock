@@ -1,16 +1,22 @@
 PODS:
-  - MUFoundation/MUPath (0.0.1)
+  - MUFoundation (0.0.5):
+    - MUFoundation/MUFirstTime (= 0.0.5)
+    - MUFoundation/MUPath (= 0.0.5)
+    - MUFoundation/MUVersion (= 0.0.5)
+  - MUFoundation/MUFirstTime (0.0.5)
+  - MUFoundation/MUPath (0.0.5)
+  - MUFoundation/MUVersion (0.0.5)
 
 DEPENDENCIES:
-  - MUFoundation/MUPath (from `.`)
+  - MUFoundation (from `.`)
 
 EXTERNAL SOURCES:
   MUFoundation:
     :path: "."
 
 SPEC CHECKSUMS:
-  MUFoundation: 09e801d850ea1fc64288716c220f2d1bc925c310
+  MUFoundation: f83baf1722ec893635c48c5df31b775eaba6809d
 
-PODFILE CHECKSUM: a6f32f4bb16cd82e3150f7cfcd927ce6f77a03a9
+PODFILE CHECKSUM: 01a7c8b93062076c7bf08d48c2023ad5fdbf7621
 
 COCOAPODS: 1.5.3

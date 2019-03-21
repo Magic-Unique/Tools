@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7F353A1473A47BCF6CB8552E23440299"
+               BlueprintIdentifier = "322B9E49BE767A5F136373C17D538B57"
                BlueprintName = "MUFoundation"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "libMUFoundation.a">

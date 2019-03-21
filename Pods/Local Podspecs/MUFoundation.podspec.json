@@ -1,6 +1,6 @@
 {
   "name": "MUFoundation",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "summary": "Magic-Unique's foundation frameworks",
   "description": "Incloud UIKit/Foundation category, some tools.",
   "homepage": "https://github.com/Magic-Unique/Tools",
@@ -9,10 +9,12 @@
     "冷秋": "516563564@qq.com"
   },
   "platforms": {
-    "ios": "7.0"
+    "ios": "7.0",
+    "osx": "10.8"
   },
   "source": {
-    "git": "https://github.com/Magic-Unique/Tools.git"
+    "git": "https://github.com/Magic-Unique/Tools.git",
+    "tag": "0.0.5"
   },
   "subspecs": [
     {
