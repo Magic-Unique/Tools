@@ -12,5 +12,7 @@
 #import "MUPath+Path.h"
 #import "MUPath+Sandbox.h"
 #import "MUPath+NSFileManager.h"
+#import "MUPath+File.h"
+#import "MUPath+Hash.h"
 
 #endif /* MUPath_h */
