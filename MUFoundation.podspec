@@ -147,4 +147,12 @@ Pod::Spec.new do |s|
     ss.source_files = 'MUFoundation/MUVersion'
   end
 
+  s.subspec 'NSString' do |ss|
+    ss.source_files = 'MUFoundation/NSString'
+  end
+
+  s.subspec 'NSArray' do |ss|
+    ss.source_files = 'MUFoundation/NSArray'
+  end
+
 end

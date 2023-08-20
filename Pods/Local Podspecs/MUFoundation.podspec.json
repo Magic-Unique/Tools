@@ -28,6 +28,14 @@
     {
       "name": "MUVersion",
       "source_files": "MUFoundation/MUVersion"
+    },
+    {
+      "name": "NSString",
+      "source_files": "MUFoundation/NSString"
+    },
+    {
+      "name": "NSArray",
+      "source_files": "MUFoundation/NSArray"
     }
   ]
 }
